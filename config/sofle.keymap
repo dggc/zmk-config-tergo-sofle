@@ -126,7 +126,7 @@
                  &mo NUMPAD &kp LGUI &kp LALT &kp SPACE  &mo SYMB_NAV    &kp ENTER  &kp BSPC  &kp DEL &kp RGUI  &kp RCTRL
 #endif
             >;
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp SCRL_UP SCRL_DOWN>;
         };
 
         adept_layer {
@@ -139,7 +139,7 @@
                      &trans     &trans      &trans      &lt MOUSE SPACE  &sk_mt SYMB_NAV LSHFT   &trans  &trans    &trans      &trans      &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp SCRL_UP SCRL_DOWN>;
         };
 
         // By defaults its equal to base_layer. To be customized by user.
@@ -161,7 +161,7 @@
 #endif
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp SCRL_UP SCRL_DOWN>;
         };
 
         symb_nav_layer {
@@ -182,7 +182,7 @@
 #endif
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp SCRL_UP SCRL_DOWN>;
         };
 
         adjust_layer {
@@ -195,7 +195,7 @@
                &trans       &trans       &trans       &trans       &trans    &trans    &trans   &trans   &trans  &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp SCRL_UP SCRL_DOWN>;
         };
 
         media_layer {
@@ -208,7 +208,7 @@
                     &trans    &trans      &trans    &trans     &trans    &trans   &trans    &trans       &trans     &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp SCRL_UP SCRL_DOWN>;
         };
 
         numpad_layer {
@@ -221,7 +221,7 @@
                     &trans    &trans      &trans    &trans     &trans    &trans   &trans    &kp KP_N0   &kp KP_N0     &kp KP_DOT
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp SCRL_UP SCRL_DOWN>;
         };
 
         mouse_layer {
@@ -234,7 +234,7 @@
                     &trans    &trans      &trans     &trans    &trans    &mkp RCLK   &mkp LCLK      &mkp MCLK      &trans         &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp SCRL_UP SCRL_DOWN>;
         };
 
         // Extra layers, so it can be added and customized in ZMK Studio
