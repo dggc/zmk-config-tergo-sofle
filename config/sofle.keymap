@@ -118,7 +118,7 @@
 &trans    &trans     &trans     &trans      &trans      &trans                                      &trans    &trans      &trans      &trans     &trans        &trans
 &trans    &mt LGUI A &mt LALT S &mt LCTRL D &mt LSHFT F &trans                                      &trans    &mt LSHFT J &mt LCTRL K &mt LALT L &mt LGUI SEMI &trans
 &trans    &trans     &trans     &trans      &trans      &trans           &trans             &trans  &trans    &trans      &trans      &trans     &trans        &trans
-                     &trans     &trans      &trans      &lt MOUSE SPACE  &lt SYMB_NAV TAB   &trans  &trans    &trans      &trans      &trans
+                     &trans     &trans      &trans      &lt MOUSE SPACE  &lt SYMB_NAV &sk LSHIFT   &trans  &trans    &trans      &trans      &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
