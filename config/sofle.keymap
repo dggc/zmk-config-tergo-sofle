@@ -170,13 +170,13 @@
 #ifdef USE_INTERNATIONAL_LAYOUT
 &trans    &kp F1        &kp F2       &kp F3        &kp F4       &kp F5                        &kp F6    &kp F7       &kp F8    &kp F9        &kp F10           &kp F11
 &trans    &kp GRAVE     &kp LS(N6)   &kp KP_PLUS   &kp LS(LBKT) &kp LS(RBKT)                  &kp PG_UP &kp HOME     &kp UP    &kp END       &kp INS           &kp F12
-&trans    &kp LS(GRAVE) &kp EQUAL    &kp KP_MINUS  &kp LS(N9)   &kp LS(N0)                    &kp PG_DN &kp LEFT     &kp DOWN  &kp RIGHT     &kp PSCRN         &none
+&trans    &kp LS(GRAVE) &kp EQUAL    &kp KP_MINUS  &kp LS(N9)   &kp LS(N0)                    &kp PG_DN &kp LEFT     &kp DOWN  &kp RIGHT     &kp PSCRN         &caps
 &trans    &kp NUBS      &kp LS(NUBS) &kp LS(MINUS) &kp LBKT     &kp RBKT   &trans    &trans   &kp CAPS  &kp LC(LEFT) &kp ESC   &kp LC(RIGHT) &kp PAUSE_BREAK   &none
                         &trans       &trans        &trans       &trans     &trans    &trans   &trans    &trans       &trans    &trans
 #else
 &trans    &kp F1        &kp F2       &kp F3        &kp F4       &kp F5                        &kp F6    &kp F7       &kp F8    &kp F9        &kp F10           &kp F11
 &trans    &kp GRAVE     &kp LS(N6)   &kp KP_PLUS   &kp BR_LBKT  &kp BR_RBKT                   &kp PG_UP &kp HOME     &kp UP    &kp END       &kp INS           &kp F12
-&trans    &kp LS(GRAVE) &kp EQUAL    &kp KP_MINUS  &kp LS(N9)   &kp LS(N0)                    &kp PG_DN &kp LEFT     &kp DOWN  &kp RIGHT     &kp PSCRN         &none
+&trans    &kp LS(GRAVE) &kp EQUAL    &kp KP_MINUS  &kp LS(N9)   &kp LS(N0)                    &kp PG_DN &kp LEFT     &kp DOWN  &kp RIGHT     &kp PSCRN         &caps
 &trans    &kp NUBS      &kp LS(NUBS) &kp LS(MINUS) &kp BR_LBCT  &kp BR_RBCT  &trans   &trans  &kp CAPS  &kp LC(LEFT) &kp ESC   &kp LC(RIGHT) &kp PAUSE_BREAK   &none
                         &trans       &trans        &trans       &trans       &trans   &trans  &trans    &trans       &trans    &trans
 #endif
