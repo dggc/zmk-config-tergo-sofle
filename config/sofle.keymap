@@ -131,7 +131,7 @@
 &trans    &trans     &trans     &trans      &trans      &trans                                      &trans    &trans      &trans      &trans     &trans        &trans
 &trans    &trans     &trans     &trans      &trans      &trans                                      &trans    &trans      &trans      &trans     &trans        &trans
 &trans    &mt LGUI A &mt LALT S &mt LCTRL D &mt LSHFT F &trans                                      &trans    &mt LSHFT J &mt LCTRL K &mt LALT L &mt LGUI SEMI &trans
-&trans    &trans     &trans     &trans      &trans      &trans           &trans             &trans  &trans    &trans      &trans      &trans     &mt RALT FSLH &trans
+&trans    &trans     &trans     &trans      &trans      &trans           &trans             &trans  &trans    &trans      &trans      &mt RALT DOT &trans      &trans
                      &trans     &trans      &trans      &lt MOUSE SPACE  &sk_mt SYMB_NAV LSHFT   &trans  &trans    &trans      &trans      &trans
             >;
 
