@@ -90,7 +90,7 @@
             bindings = <&kp>, <&kp>;
         };
 
-	td2_mt: sticky_key_mod_tap {
+	td2_mt: td2_mod_tap {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <3>;
             tapping-term-ms = <TAPPING_TERM>;
