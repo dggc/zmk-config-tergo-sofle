@@ -82,20 +82,6 @@
             tapping-term-ms = <TAPPING_TERM>;
             bindings = <&mo>, <&sk>;
         };
-
-	td2: tap_dance_2 {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <2>;
-            tapping-term-ms = <TAPPING_TERM>;
-            bindings = <&kp>, <&kp>;
-        };
-
-	td2_mt: td2_mod_tap {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <3>;
-            tapping-term-ms = <TAPPING_TERM>;
-            bindings = <&mo>, <&td2>;
-        };
     };
 };
 
