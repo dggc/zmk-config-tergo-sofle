@@ -51,11 +51,6 @@
     flavor = "balanced"; // Pode ser "balanced", "hold-preferred" ou "tap-preferred"
 };
 
-&u_input {
-    unicode-input-mode = "linux"; // or "win" or "macos" depending on your system
-};
-
-
 // Combos do teclado
 / {
     combos {
