@@ -86,6 +86,15 @@
             tapping-term-ms = <TAPPING_TERM>;
             bindings = <&mo>, <&sk>;
         };
+
+	hp_mt: hold_preferred_mod_tap {
+            compatible = "zmk,behavior-hold-tap";
+            tapping-term-ms = <TAPPING_TERM>;
+            quick-tap-ms = <TAPPING_TERM>;
+            flavor = "hold-preferred"; // Pode ser "balanced", "hold-preferred" ou "tap-preferred"
+            #binding-cells = <2>;
+            bindings = <&mo>, <&kp>;
+        };
     };
 };
 
@@ -135,7 +144,7 @@
 &trans    &trans     &trans     &trans      &trans      &trans                                      &trans    &trans      &trans      &trans     &trans        &trans
 &trans    &trans     &trans     &trans      &trans      &trans                                      &trans    &trans      &trans      &trans     &trans        &trans
 &trans    &mt LGUI A &mt LALT S &mt LCTRL D &mt LSHFT F &trans                                      &trans    &mt LSHFT J &mt LCTRL K &mt LALT L &mt LGUI SEMI &trans
-&trans    &trans     &trans     &trans      &trans      &trans           &trans             &trans  &trans    &trans      &trans      &mt RALT DOT &trans      &trans
+&trans    &trans     &trans     &trans      &trans      &trans           &trans             &trans  &trans    &trans      &trans      &hp_mt RALT DOT &trans      &trans
                      &trans     &trans      &trans      &lt MOUSE SPACE  &sk_mt SYMB_NAV LSHFT   &trans  &trans    &trans      &trans      &trans
             >;
 
