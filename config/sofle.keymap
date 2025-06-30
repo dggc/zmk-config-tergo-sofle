@@ -98,6 +98,7 @@
 
         rot_msc: sensor_rotate_msc {
             compatible = "zmk,behavior-sensor-rotate-var";
+	    tap-ms = <20>;
             #sensor-binding-cells = <2>;
             bindings = <&msc>, <&msc>;
         };
