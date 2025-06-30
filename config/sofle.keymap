@@ -55,6 +55,10 @@
     quick-release;
 };
 
+&caps_word {
+    continue-list = <UNDERSCORE MINUS>;
+};
+
 // Combos do teclado
 / {
     combos {
