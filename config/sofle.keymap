@@ -93,7 +93,7 @@
             quick-tap-ms = <TAPPING_TERM>;
             flavor = "hold-preferred"; // Pode ser "balanced", "hold-preferred" ou "tap-preferred"
             #binding-cells = <2>;
-            bindings = <&mo>, <&kp>;
+            bindings = <&kp>, <&kp>;
         };
     };
 };
