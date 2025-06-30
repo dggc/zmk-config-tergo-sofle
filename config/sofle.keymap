@@ -51,6 +51,10 @@
     flavor = "balanced"; // Pode ser "balanced", "hold-preferred" ou "tap-preferred"
 };
 
+&u_input {
+    unicode-input-mode = "linux"; // or "win" or "macos" depending on your system
+};
+
 
 // Combos do teclado
 / {
@@ -73,11 +77,17 @@
 
 / {
     behaviors {
-    	sk_mt: sticky_key_mod_tap {
+	sk_mt: sticky_key_mod_tap {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             tapping-term-ms = <TAPPING_TERM>;
             bindings = <&mo>, <&sk>;
+        };
+
+	unicode_cedilla: unicode_cedilla {
+            compatible = "zmk,behavior-unicode";
+            label = "CEDILLA";
+            bindings = <U00E7>;
         };
     };
 };
