@@ -4,7 +4,8 @@
  * SPDX-License-Identifier: MIT
  */
 
- #include "zmk-helpers/helper.h"
+#define HOST_OS 1  //linux
+#include "zmk-helpers/helper.h"
 
 // Source desired key-position labels
 #include "zmk-helpers/key-labels/sofle.h"
