@@ -24,6 +24,7 @@
 
 #define ___ &trans
 #define NA &none
+#define SENSORS &inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN
 
 // Enumera as camadas do teclado
 #define BASE 0
@@ -183,8 +184,8 @@ ZMK_LAYER(seniply_base_layer,
 // ╰─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤╰─────────────╯    ╰─────────────╯├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────╯
                                 NA            NA            NA            &kp LSHFT      NA                   NA           &kp SPACE     NA            NA            NA
 //                             ╰─────────────┴─────────────┴─────────────┴─────────────┴─────────────╯      ╰─────────────┴─────────────┴─────────────┴─────────────┴─────────────╯
-)
-        
+, SENSORS)
+
 / {
     keymap {
         compatible = "zmk,keymap";
