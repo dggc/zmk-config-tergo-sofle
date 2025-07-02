@@ -37,10 +37,7 @@
 #define NUMPAD 6
 #define MOUSE 7
 
-#define SENIPLY_EXTEND 8
-#define SENIPLY_FUNCTION 9
-#define SENIPLY_SYMBOLS 10
-#define SENIPLY_NUMBERS 11
+#define MIRYOKU 8
 
 // ABNT2 keycodes
 // Mapeamento de teclas ABNT2 que são usados para o layout brasileiro
@@ -225,7 +222,7 @@ ZMK_LAYER(Confg,
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤                                  ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
     NA             NA           NA            &out OUT_TOG  NA            NA                                               NA            NA            &bt BT_CLR     NA           NA            NA
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤╭─────────────╮    ╭─────────────╮├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-    &bootloader    NA           &to BASE      &to ADEPT     &to SENIPLY_BASE NA          ___                ___            NA            NA            NA             NA           NA            &bootloader
+    &bootloader    &to MIRYOKU  &to BASE      &to ADEPT     &to SENIPLY_BASE NA          ___                ___            NA            NA            NA             NA           NA            &bootloader
 // ╰─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤╰─────────────╯    ╰─────────────╯├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────╯
                                 ___           ___           ___           ___            ___                 ___           ___           ___           ___            ___
 //                             ╰─────────────┴─────────────┴─────────────┴─────────────┴─────────────╯      ╰─────────────┴─────────────┴─────────────┴─────────────┴─────────────╯
@@ -272,3 +269,7 @@ ZMK_LAYER(Mouse,
                                 ___           ___           ___           ___            ___                 &mkp RCLK     &mkp LCLK     &mkp MCLK     ___           ___
 //                             ╰─────────────┴─────────────┴─────────────┴─────────────┴─────────────╯      ╰─────────────┴─────────────┴─────────────┴─────────────┴─────────────╯
 , SENSORS)
+
+#include "../miryoku/custom_config.h"
+#include "../miryoku/mapping/60/sofle.h"
+#include "../miryoku/miryoku.dtsi"
