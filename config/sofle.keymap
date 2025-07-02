@@ -100,7 +100,7 @@
     };
 };
 
-ZMK_COMBO(clear_layer,  &ti BASE, LEC REC)
+ZMK_COMBO(clear_layer,  &to BASE, LEC REC)
 
 // Sticy key mod tap
 ZMK_HOLD_TAP(sk_mt,
