@@ -99,11 +99,6 @@
             key-positions = <50 59>; // primeira e última teclas da linha de teclas mais abaixo do teclado
             bindings = <&studio_unlock>; // Tecla a ser simulada ao apertar a combinação acima
         };
-        combo_esc {
-            key-positions = <28 31>; //j+k
-            timeout-ms = <30>; // Tempo de tolerancia para apertar as teclas ao mesmo tempo
-            bindings = <&kp ESC>;
-        };
     };
 };
 

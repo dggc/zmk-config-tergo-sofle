@@ -16,4 +16,8 @@
 // Clear layers
 ZMK_COMBO(clear_layer, &to TBASE, LEC REC)
 
+// Esc
+ZMK_COMBO(mouse, &kp ESC, LM1 RM1, ALL, COMBO_TERM_FAST, COMBO_IDLE_FAST)
+
+// Numword
 ZMK_COMBO(mouse, &num_word U_NUM, RH1 LM1, ALL, COMBO_TERM_FAST, COMBO_IDLE_FAST)
