@@ -270,6 +270,6 @@ ZMK_LAYER(Mouse,
 //                             ╰─────────────┴─────────────┴─────────────┴─────────────┴─────────────╯      ╰─────────────┴─────────────┴─────────────┴─────────────┴─────────────╯
 , SENSORS)
 
-#include "../miryoku/custom_config.h"
-#include "../miryoku/mapping/60/sofle.h"
-#include "../miryoku/miryoku.dtsi"
+#include "miryoku/custom_config.h"
+#include "miryoku/mapping/60/sofle.h"
+#include "miryoku/miryoku.dtsi"
