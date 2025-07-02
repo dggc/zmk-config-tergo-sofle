@@ -218,22 +218,23 @@ ZMK_LAYER(SymNv,
 , SENSORS)
 #endif
 
+ZMK_LAYER(Confg,
+// ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮                                  ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
+    &studio_unlock &bt BT_SEL 0 &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                                     NA            NA            NA            NA            NA            NA
+// ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤                                  ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
+    NA             NA           NA            NA            NA            NA                                               NA            NA            &bt BT_CLR_ALL NA           NA            NA
+// ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤                                  ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
+    NA             NA           NA            &out OUT_TOG  NA            NA                                               NA            NA            &bt BT_CLR     NA           NA            NA
+// ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤╭─────────────╮    ╭─────────────╮├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
+    &bootloader    NA           &to BASE      &to ADEPT     &to SENIPLY_BASE NA          ___                ___            NA            NA            NA             NA           NA            &bootloader
+// ╰─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤╰─────────────╯    ╰─────────────╯├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────╯
+                                ___           ___           ___           ___            ___                 ___           ___           ___           ___            ___
+//                             ╰─────────────┴─────────────┴─────────────┴─────────────┴─────────────╯      ╰─────────────┴─────────────┴─────────────┴─────────────┴─────────────╯
+, SENSORS)
+
 / {
     keymap {
         compatible = "zmk,keymap";
-
-        adjust_layer {
-            display-name = "Confg";
-            bindings = <
-&studio_unlock &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4                 &none    &none   &none          &none   &none   &none
-&none          &none        &none        &none        &none        &none                        &none    &none   &bt BT_CLR_ALL &none   &none   &none
-&none          &none        &none        &out OUT_TOG &none        &none                        &none    &none   &bt BT_CLR     &none   &none   &none
-&bootloader    &none        &to BASE     &to ADEPT    &to SENIPLY_BASE    &none     &trans    &trans   &none    &none   &none          &none   &none   &bootloader
-               &trans       &trans       &trans       &trans       &trans    &trans    &trans   &trans   &trans  &trans
-            >;
-
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>; // Para o knob (encoder)
-        };
 
         media_layer {
             display-name = "Media";
