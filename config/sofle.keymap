@@ -103,15 +103,14 @@
     };
 };
 
+// Sticy key mod tap
+ZMK_HOLD_TAP(sk_mt,
+    tapping-term-ms = <TAPPING_TERM>;
+    bindings = <&mo>, <&sk>;
+)
+
 / {
     behaviors {
-	sk_mt: sticky_key_mod_tap {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            tapping-term-ms = <TAPPING_TERM>;
-            bindings = <&mo>, <&sk>;
-        };
-
 	hp_mt: hold_preferred_mod_tap {
             compatible = "zmk,behavior-hold-tap";
             tapping-term-ms = <TAPPING_TERM>;
