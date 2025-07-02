@@ -260,48 +260,16 @@ ZMK_LAYER(NumPd,
 //                             ╰─────────────┴─────────────┴─────────────┴─────────────┴─────────────╯      ╰─────────────┴─────────────┴─────────────┴─────────────┴─────────────╯
 , SENSORS)
 
-/ {
-    keymap {
-        compatible = "zmk,keymap";
-
-        mouse_layer {
-            display-name = "Mouse";
-            bindings = <
-&trans    &trans    &trans    &trans      &trans     &trans                          &trans         &trans         &trans         &trans          &trans    &trans
-&trans    &none     &none     &none       &none      &none                           &msc SCRL_UP   &none          &mmv MOVE_UP   &none           &none     &trans
-&trans    &kp LGUI  &kp LALT  &kp LCTRL   &kp LSHFT  &none                           &msc SCRL_DOWN &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_RIGHT &none     &trans
-&trans    &none     &none     &none       &none      &none     &trans    &trans      &none          &none          &none          &none           &none     &trans
-                    &trans    &trans      &trans     &trans    &trans    &mkp RCLK   &mkp LCLK      &mkp MCLK      &trans         &trans
-            >;
-
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>; // Para o knob (encoder)
-        };
-
-        // Extra layers, so it can be added and customized in ZMK Studio
-        extra1 {
-            status = "reserved";
-        };
-        extra2 {
-            status = "reserved";
-        };
-        extra3 {
-            status = "reserved";
-        };
-        extra4 {
-            status = "reserved";
-        };
-        extra5 {
-            status = "reserved";
-        };
-        extra6 {
-            status = "reserved";
-        };
-        extra7 {
-            status = "reserved";
-        };
-        extra8 {
-            status = "reserved";
-        };
-    };
-
-};
+ZMK_LAYER(Mouse,
+// ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮                                  ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
+    ___           ___           ___           ___           ___           ___                                              ___           ___           ___           ___           ___           ___
+// ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤                                  ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
+    ___           NA            NA            NA            NA            NA                                               &msc SCRL_UP  NA            &mmv MOVE_UP  NA            NA            ___
+// ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤                                  ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
+    ___           &kp LGUI      &kp LALT      &kp LCTRL     &kp LSHFT     NA                                               &msc SCRL_DOWN &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_RIGHT NA       ___
+// ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤╭─────────────╮    ╭─────────────╮├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
+    ___           NA            NA            NA            NA            NA             ___                 ___           NA            NA            NA            NA            NA            ___
+// ╰─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤╰─────────────╯    ╰─────────────╯├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────╯
+                                ___           ___           ___           ___            ___                 &mkp RCLK     &mkp LCLK     &mkp MCLK     ___           ___
+//                             ╰─────────────┴─────────────┴─────────────┴─────────────┴─────────────╯      ╰─────────────┴─────────────┴─────────────┴─────────────┴─────────────╯
+, SENSORS)
