@@ -246,22 +246,23 @@ ZMK_LAYER(Media,
 //                             ╰─────────────┴─────────────┴─────────────┴─────────────┴─────────────╯      ╰─────────────┴─────────────┴─────────────┴─────────────┴─────────────╯
 , SENSORS)
 
+ZMK_LAYER(NumPd,
+// ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮                                  ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
+    ___           ___           ___           ___           ___           ___                                              ___           &kp KP_NLCK   &kp KP_SLASH  &kp KP_ASTERISK &kp KP_MINUS ___
+// ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤                                  ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
+    ___           NA            NA            NA            NA            NA                                               NA            &kp KP_N7     &kp KP_N8     &kp KP_N9     &kp KP_PLUS    ___
+// ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤                                  ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
+    ___           NA            NA            NA            NA            NA                                               NA            &kp KP_N4     &kp KP_N5     &kp KP_N6     &kp KP_PLUS    ___
+// ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤╭─────────────╮    ╭─────────────╮├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
+    ___           NA            NA            NA            NA            NA             ___                 ___           NA            &kp KP_N1     &kp KP_N2     &kp KP_N3     &kp KP_ENTER   ___
+// ╰─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤╰─────────────╯    ╰─────────────╯├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────╯
+                                ___           ___           ___           ___            ___                 ___          ___            &kp KP_N0     &kp KP_N0     &kp KP_DOT
+//                             ╰─────────────┴─────────────┴─────────────┴─────────────┴─────────────╯      ╰─────────────┴─────────────┴─────────────┴─────────────┴─────────────╯
+, SENSORS)
+
 / {
     keymap {
         compatible = "zmk,keymap";
-
-        numpad_layer {
-            display-name = "NumPd";
-            bindings = <
-&trans    &trans    &trans    &trans      &trans    &trans                        &trans    &kp KP_NLCK &kp KP_SLASH  &kp KP_ASTERISK  &kp KP_MINUS   &trans
-&trans    &none     &none     &none       &none     &none                         &none     &kp KP_N7   &kp KP_N8     &kp KP_N9        &kp KP_PLUS    &trans
-&trans    &none     &none     &none       &none     &none                         &none     &kp KP_N4   &kp KP_N5     &kp KP_N6        &kp KP_PLUS    &trans
-&trans    &none     &none     &none       &none     &none      &trans    &trans   &none     &kp KP_N1   &kp KP_N2     &kp KP_N3        &kp KP_ENTER   &trans
-                    &trans    &trans      &trans    &trans     &trans    &trans   &trans    &kp KP_N0   &kp KP_N0     &kp KP_DOT
-            >;
-
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>; // Para o knob (encoder)
-        };
 
         mouse_layer {
             display-name = "Mouse";
