@@ -18,5 +18,8 @@ manifest:
     - name: zmk-auto-layer
       remote: urob
       revision: v0.2.1 # set to same version as zmk above
+    - name: zmk-tri-state
+      remote: urob
+      revision: v0.2.1 # set to same version as zmk above
   self:
     path: config
