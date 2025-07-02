@@ -100,7 +100,28 @@
     };
 };
 
+// Clear layers
 ZMK_COMBO(clear_layer,  &to BASE, LEC REC)
+
+ZMK_HOLD_TAP(hml,
+    flavor = "balanced";
+    tapping-term-ms = <280>;
+    require-prior-idle-ms = <150>;
+    hold-trigger-key-positions = <KEYS_R THUMBS>;
+    hold-trigger-on-release;
+    bindings = <&kp>, <&kp>;
+)
+
+ZMK_HOLD_TAP(hmr,
+    flavor = "balanced";
+    tapping-term-ms = <280>;
+    require-prior-idle-ms = <150>;
+    hold-trigger-key-positions = <KEYS_L THUMBS>;
+    hold-trigger-on-release;
+    bindings = <&kp>, <&kp>;
+)
+#define HML(MOD, TAP) &hml MOD TAP
+#define HMR(MOD, TAP) &hmr MOD TAP
 
 // Sticy key mod tap
 ZMK_HOLD_TAP(sk_mt,
