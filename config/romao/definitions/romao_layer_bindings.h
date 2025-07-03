@@ -1,6 +1,8 @@
 // Layer definitions for ROMAO keymap
 // Based on the keymap configuration provided
 
+#define R_MACRO_VA_ARGS(macro, ...) macro(__VA_ARGS__)
+
 #define ROMAO_LAYER_NAME_DEFAULT "ROMAK"
 #define ROMAO_LAYER_NAME_CAMEL_CASE "CAMEL"
 #define ROMAO_LAYER_NAME_SNAKE_CASE "SNAKE"

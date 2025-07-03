@@ -2,8 +2,6 @@
  * ROMAO Layer Declarations
  * Generated ZMK_LAYER declarations for all ROMAO layers
  */
-#define R_MACRO_VA_ARGS(macro, ...) macro(__VA_ARGS__)
-
 // Layer declarations using ZMK_LAYER macro
 ZMK_LAYER(ROMAO_LAYER_NAME_DEFAULT, R_MACRO_VA_ARGS(ROMAO_MAPPING, ROMAO_LAYER_DEFAULT))
 ZMK_LAYER(ROMAO_LAYER_NAME_CAMEL_CASE, R_MACRO_VA_ARGS(ROMAO_MAPPING, ROMAO_LAYER_CAMEL_CASE))
