@@ -41,6 +41,7 @@
 #define TMOUSE 7
 
 #define MIRYOKU 8
+#define ROMAO 18
 
 // ABNT2 keycodes
 // Mapeamento de teclas ABNT2 que são usados para o layout brasileiro
@@ -253,7 +254,7 @@ ZMK_LAYER(Confg,
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤                                  ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
     NA             NA           NA            &out OUT_TOG  NA            NA                                               NA            NA            &bt BT_CLR     NA           NA            NA
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤╭─────────────╮    ╭─────────────╮├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-    &bootloader    &to MIRYOKU  &to TBASE      &to TADEPT     &to SENIPLY_BASE NA          ___                ___            NA            NA            NA             NA           NA            &bootloader
+    &bootloader    &to MIRYOKU  &to TBASE      &to TADEPT   &to SENIPLY_BASE &to ROMAO    ___                ___           NA            NA            NA             NA           NA            &bootloader
 // ╰─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤╰─────────────╯    ╰─────────────╯├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────╯
                                 ___           ___           ___           ___            ___                 ___           ___           ___           ___            ___
 //                             ╰─────────────┴─────────────┴─────────────┴─────────────┴─────────────╯      ╰─────────────┴─────────────┴─────────────┴─────────────┴─────────────╯
@@ -308,7 +309,7 @@ ZMK_LAYER(Mouse,
 #define LINUX
 #include "romao/mappings/sofle.h"
 #include "romao/definitions/includes.h"
-#include "romao/definitions/romao_layer_bindings.dtsi"
+#include "romao/definitions/romao_layer_bindings.h"
 #include "romao/definitions/romao_layers.dtsi"
 
 #include "combos.dtsi"
