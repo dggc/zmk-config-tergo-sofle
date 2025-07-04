@@ -41,7 +41,7 @@
 #define TMOUSE 0 // TODO delete
 
 #define MIRYOKU 3
-#define ROMAO 3
+#define ROMAO 13
 
 // ABNT2 keycodes
 // Mapeamento de teclas ABNT2 que são usados para o layout brasileiro
@@ -149,13 +149,6 @@ ZMK_HOLD_TAP(sk_mt,
             bindings = <&msc>, <&msc>;
         };
     };
-
-    nav_word: nav_word {
-        compatible = "zmk,behavior-auto-layer";
-        #binding-cells = <1>;
-        continue-list = <LEFT DOWN UP RIGHT PG_DN PG_UP HOME END>;
-        ignore-modifiers;
-    };
 };
 
 #ifdef USE_INTERNATIONAL_LAYOUT
@@ -232,9 +225,9 @@ ZMK_LAYER(Confg,
 //                             ╰─────────────┴─────────────┴─────────────┴─────────────┴─────────────╯      ╰─────────────┴─────────────┴─────────────┴─────────────┴─────────────╯
 , SENSORS)
 
-// #include "miryoku/custom_config.h"
-// #include "miryoku/mapping/60/sofle.h"
-// #include "miryoku/miryoku.dtsi"
+#include "miryoku/custom_config.h"
+#include "miryoku/mapping/60/sofle.h"
+#include "miryoku/miryoku.dtsi"
 
 #define LINUX
 #include "romao/mappings/sofle.h"
