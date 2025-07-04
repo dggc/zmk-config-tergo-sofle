@@ -41,7 +41,7 @@
 #define TMOUSE 0 // TODO delete
 
 #define MIRYOKU 3
-#define ROMAO 13
+#define ROMAO 3
 
 // ABNT2 keycodes
 // Mapeamento de teclas ABNT2 que são usados para o layout brasileiro
@@ -232,14 +232,14 @@ ZMK_LAYER(Confg,
 //                             ╰─────────────┴─────────────┴─────────────┴─────────────┴─────────────╯      ╰─────────────┴─────────────┴─────────────┴─────────────┴─────────────╯
 , SENSORS)
 
-#include "miryoku/custom_config.h"
-#include "miryoku/mapping/60/sofle.h"
-#include "miryoku/miryoku.dtsi"
+// #include "miryoku/custom_config.h"
+// #include "miryoku/mapping/60/sofle.h"
+// #include "miryoku/miryoku.dtsi"
 
 #define LINUX
 #include "romao/mappings/sofle.h"
-// #include "romao/definitions/includes.h"
-// #include "romao/definitions/romao_layer_bindings.h"
-// #include "romao/definitions/romao_layers.dtsi"
+#include "romao/definitions/includes.h"
+#include "romao/definitions/romao_layer_bindings.h"
+#include "romao/definitions/romao_layers.dtsi"
 
 #include "combos.dtsi"
