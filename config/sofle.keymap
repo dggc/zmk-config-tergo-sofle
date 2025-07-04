@@ -308,7 +308,7 @@ ZMK_LAYER(Mouse,
 
 #define LINUX
 #include "romao/mappings/sofle.h"
-// #include "romao/definitions/includes.h"
+#include "romao/definitions/includes.h"
 // #include "romao/definitions/romao_layer_bindings.h"
 // #include "romao/definitions/romao_layers.dtsi"
 
