@@ -41,9 +41,5 @@ manifest:
           - hal_stm32
           - lvgl
           - tinycrypt
-
-    - name: zmk-helpers
-      remote: urob
-
   self:
     path: config
