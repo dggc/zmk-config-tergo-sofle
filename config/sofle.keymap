@@ -232,7 +232,7 @@ ZMK_LAYER(Confg,
 #define LINUX
 #include "romao/mappings/sofle.h"
 #include "romao/definitions/includes.h"
-// #include "romao/definitions/romao_layer_bindings.h"
-// #include "romao/definitions/romao_layers.dtsi"
+#include "romao/definitions/romao_layer_bindings.h"
+#include "romao/definitions/romao_layers.dtsi"
 
 #include "combos.dtsi"

@@ -33,9 +33,9 @@
 #include "../features/adaptive.dtsi"
 #include "../features/symbols.dtsi"
 
-// #include "../features/combos.dtsi"
-// #include "../features/leader.dtsi"
+#include "../features/combos.dtsi"
+#include "../features/leader.dtsi"
 
-// #if __has_include("../secret.dtsi")
-// #include "../secret.dtsi"
-// #endif
+#if __has_include("../secret.dtsi")
+#include "../secret.dtsi"
+#endif
