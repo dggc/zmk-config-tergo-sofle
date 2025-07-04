@@ -108,14 +108,14 @@
             ADAPTIVE(h_s    , &kp H      , LS(A) LS(E) LS(I) LS(O) LS(U) )
         };
 
-        // reversed_magic_c: reversed_magic_c {
-        //     compatible = "zmk,behavior-adaptive-key";
-        //     #binding-cells = <0>;
-        //     bindings = <&kp RS(V)>;
+        reversed_magic_c: reversed_magic_c {
+            compatible = "zmk,behavior-adaptive-key";
+            #binding-cells = <0>;
+            bindings = <&kp RS(V)>;
 
-        //     ADAPTIVE(h_c    , &kp RS(H)  , RS(A) RS(E) RS(I) RS(O) RS(U) )
-        //     ADAPTIVE(v_spc  , &kp LS(V)  , SPACE )
-        // };
+            ADAPTIVE(h_c    , &kp RS(H)  , RS(A) RS(E) RS(I) RS(O) RS(U) )
+            ADAPTIVE(v_spc  , &kp LS(V)  , SPACE )
+        };
 
     };
 };

@@ -18,7 +18,7 @@ ROMAO_X(NUMBERS,  "NUM") \
 ROMAO_X(SYMBOLS,  "SYM") \
 ROMAO_X(SENTENCE_CASE,  "CASE") \
 ROMAO_X(CCEDIL,  "Ç EXT") \
-// ROMAO_X(SHIFTED_ALPHA2,  "ROMAK") \
+ROMAO_X(SHIFTED_ALPHA2,  "ROMAK") \
 // ROMAO_X(CASE_ALPHA2,  "CASE") \
 // ROMAO_X(CASE_CCEDIL,  "CASE") \
 // ROMAO_X(SHORTCUTS,  "SHORTS") \
@@ -120,11 +120,11 @@ ROMAO_X(CCEDIL,  "Ç EXT") \
 &none,               &none,               &none,               &mc_otiles,          &none,               &none,               &ac_otil,            &trans,              &trans,              &none, \
                                           &none,               &sl ALPHA2,          &trans,              &trans,              &trans,              &none
 
-// #define ROMAO_LAYER_SHIFTED_ALPHA2 \
-// &none,               &kp LS(Q),           &mc_qu_s,            &kp LS(K),           &none,               &none,               &ac_ocir_s,          &ac_oacu_s,          &ac_uacu_s,          &none, \
-// &kp LS(Y),           &kp LS(Z),           &kp LS(X),           &kp LS(W),           &none,               &none,               &ac_atil_s,          &ac_aacu_s,          &ac_eacu_s,          &ac_iacu_s, \
-// &none,               &kp LS(J),           &mc_ced_s,           &reversed_magic_c,   &none,               &none,               &ac_otil_s,          &ac_acir_s,          &ac_ecir_s,          &none, \
-//                                           &none,               &mc_sqo,             &trans,              &kp SPACE,           &mc_sqo,             &none
+#define ROMAO_LAYER_SHIFTED_ALPHA2 \
+&none,               &kp LS(Q),           &mc_qu_s,            &kp LS(K),           &none,               &none,               &ac_ocir_s,          &ac_oacu_s,          &ac_uacu_s,          &none, \
+&kp LS(Y),           &kp LS(Z),           &kp LS(X),           &kp LS(W),           &none,               &none,               &ac_atil_s,          &ac_aacu_s,          &ac_eacu_s,          &ac_iacu_s, \
+&none,               &kp LS(J),           &mc_ced_s,           &reversed_magic_c,   &none,               &none,               &ac_otil_s,          &ac_acir_s,          &ac_ecir_s,          &none, \
+                                          &none,               &mc_sqo,             &trans,              &kp SPACE,           &mc_sqo,             &none
 
 // #define ROMAO_LAYER_CASE_ALPHA2 \
 // &none,               &kp RS(Q),           &mc_qu_c,            &kp RS(K),           &none,               &none,               &ac_ocir_c,          &ac_oacu_c,          &ac_uacu_c,          &none, \
