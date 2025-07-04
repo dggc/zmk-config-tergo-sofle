@@ -97,16 +97,16 @@
             bindings = <&kp>, <&magic_key_c>;
         };
 
-        // // ******************** REVERSED MAGIC KEY ******************** //
+        // ******************** REVERSED MAGIC KEY ******************** //
 
-        // reversed_magic: reversed_magic {
-        //     compatible = "zmk,behavior-adaptive-key";
-        //     #binding-cells = <0>;
-        //     bindings = <&kp V>;
+        reversed_magic: reversed_magic {
+            compatible = "zmk,behavior-adaptive-key";
+            #binding-cells = <0>;
+            bindings = <&kp V>;
 
-        //     ADAPTIVE(h      , &kp H      , A     E     I     O     U     )
-        //     ADAPTIVE(h_s    , &kp H      , LS(A) LS(E) LS(I) LS(O) LS(U) )
-        // };
+            ADAPTIVE(h      , &kp H      , A     E     I     O     U     )
+            ADAPTIVE(h_s    , &kp H      , LS(A) LS(E) LS(I) LS(O) LS(U) )
+        };
 
         // reversed_magic_c: reversed_magic_c {
         //     compatible = "zmk,behavior-adaptive-key";
