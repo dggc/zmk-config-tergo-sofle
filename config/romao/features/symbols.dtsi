@@ -43,19 +43,19 @@
         LAYERTAP_TP(lt_n0,            &mc_n0)
 
         MACRO(mc_sqo,                 &kp SQT &kp SPACE)
-        // MACRO(mc_end_sqo,             &kp END &mc_sqo)
-        // TAPHOLD_TP(th_sqo,            &mc_sqo, &mc_end_sqo)
+        MACRO(mc_end_sqo,             &kp END &mc_sqo)
+        TAPHOLD_TP(th_sqo,            &mc_sqo, &mc_end_sqo)
 
-        // MACRO(mc_dqo,                 &kp DQT &kp SPACE)
-        // MACRO(mc_end_dqo,             &kp END &mc_dqo)
-        // TAPHOLD_TP(th_dqo,            &mc_dqo, &mc_end_dqo)
+        MACRO(mc_dqo,                 &kp DQT &kp SPACE)
+        MACRO(mc_end_dqo,             &kp END &mc_dqo)
+        TAPHOLD_TP(th_dqo,            &mc_dqo, &mc_end_dqo)
 
-        // MACRO(mc_bti,                 &kp GRAVE &kp SPACE)
-        // MACRO(mc_end_bti,             &kp END &mc_bti)
-        // TAPHOLD_TP(th_bti,            &mc_bti, &mc_end_bti)
+        MACRO(mc_bti,                 &kp GRAVE &kp SPACE)
+        MACRO(mc_end_bti,             &kp END &mc_bti)
+        TAPHOLD_TP(th_bti,            &mc_bti, &mc_end_bti)
 
-        // MACRO(mc_tilde,               &kp TILDE &kp SPACE)
-        // LAYERTAP_TP(lt_tilde,         &mc_tilde)
+        MACRO(mc_tilde,               &kp TILDE &kp SPACE)
+        LAYERTAP_TP(lt_tilde,         &mc_tilde)
 
         // MACRO(mc_and,                 &kp AMPS &kp AMPS)
         // MACRO(mc_right_and,           &kp RIGHT &kp AMPS &kp AMPS)
@@ -81,9 +81,9 @@
         MACRO(mc_end_lbkt,            &kp END &kp LBKT)
         TAPHOLD_TP(th_lbkt,           &mc_lbkt, &mc_end_lbkt)
 
-        // MACRO(mc_qmark,               &kp QMARK )
-        // MACRO(mc_end_qmark,           &kp END &kp QMARK )
-        // TAPHOLD_TP(th_qmark,          &mc_qmark, &mc_end_qmark)
+        MACRO(mc_qmark,               &kp QMARK )
+        MACRO(mc_end_qmark,           &kp END &kp QMARK )
+        TAPHOLD_TP(th_qmark,          &mc_qmark, &mc_end_qmark)
 
         MACRO(mc_rbrc,                &kp RBRC)
         MACRO(mc_end_rbrc,            &kp END &kp RBRC)
@@ -137,25 +137,25 @@
         // MACRO(mc_end_dcolon,          &kp END &kp COLON &kp COLON)
         // TAPHOLD_TP(th_dcolon,         &mc_dcolon, &mc_end_dcolon)
 
-        // MACRO(mc_perc,                &kp PERCENT)
-        // MACRO(mc_end_perc,            &kp END &kp PERCENT)
-        // TAPHOLD_TP(th_perc,           &mc_perc, &mc_end_perc)
+        MACRO(mc_perc,                &kp PERCENT)
+        MACRO(mc_end_perc,            &kp END &kp PERCENT)
+        TAPHOLD_TP(th_perc,           &mc_perc, &mc_end_perc)
 
-        // MACRO(mc_lt,                  &kp LT)
-        // MACRO(mc_gt,                  &kp GT)
+        MACRO(mc_lt,                  &kp LT)
+        MACRO(mc_gt,                  &kp GT)
 
-        // MACRO(mc_excl,                &kp EXCL )
-        // MACRO(mc_end_excl,            &kp END &kp EXCL )
-        // TAPHOLD_TP(th_excl,           &mc_excl, &mc_end_excl)
+        MACRO(mc_excl,                &kp EXCL )
+        MACRO(mc_end_excl,            &kp END &kp EXCL )
+        TAPHOLD_TP(th_excl,           &mc_excl, &mc_end_excl)
 
-        // MACRO(mc_colon,               &kp COLON)
-        // MACRO(mc_end_colon,           &kp END &kp COLON)
-        // TAPHOLD_TP(th_colon,          &mc_colon, &mc_end_colon)
+        MACRO(mc_colon,               &kp COLON)
+        MACRO(mc_end_colon,           &kp END &kp COLON)
+        TAPHOLD_TP(th_colon,          &mc_colon, &mc_end_colon)
 
-        // MACRO(mc_eql,                 &kp EQUAL)
-        // MACRO(mc_end_eql,             &kp END &kp EQUAL)
-        // TAPHOLD_TP(th_eql,            &mc_eql, &mc_end_eql)
-        // MACRO(mc_eqeq,                &kp EQUAL &kp EQUAL)
+        MACRO(mc_eql,                 &kp EQUAL)
+        MACRO(mc_end_eql,             &kp END &kp EQUAL)
+        TAPHOLD_TP(th_eql,            &mc_eql, &mc_end_eql)
+        MACRO(mc_eqeq,                &kp EQUAL &kp EQUAL)
 
         // MACRO(mc_noteq,               &kp EXCL &kp EQUAL)
 

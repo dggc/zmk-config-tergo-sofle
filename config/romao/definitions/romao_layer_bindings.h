@@ -15,7 +15,7 @@ ROMAO_X(CAPSWORD,  "CASE") \
 ROMAO_X(CAPSLINE,  "CASE") \
 ROMAO_X(ALPHA2,  "ROMAK") \
 ROMAO_X(NUMBERS,  "NUM") \
-// ROMAO_X(SYMBOLS,  "SYM") \
+ROMAO_X(SYMBOLS,  "SYM") \
 // ROMAO_X(SENTENCE_CASE,  "CASE") \
 // ROMAO_X(CCEDIL,  "Ç EXT") \
 // ROMAO_X(SHIFTED_ALPHA2,  "ROMAK") \
@@ -102,11 +102,11 @@ ROMAO_X(NUMBERS,  "NUM") \
 &none,               &th_lbkt 0 0,        &th_rbkt 0 0,        &kp PIPE,            &none,               &none,               &mc_n1,              &mc_n2,              &mc_n3,              &none, \
                                           &none,               &trans,              &trans,              &hlt SYM SPACE,      &lt_n0 MEDIA 0,      &none
 
-// #define ROMAO_LAYER_SYMBOLS \
-// &none,               &mc_tilde,           &kp HASH,            &th_sqo 0 0,         &none,               &none,               &th_perc 0 0,        &th_eql 0 0,         &th_colon 0 0,       &none, \
-// &kp AT,              &th_caret_z 0 0,     &kp DOLLAR,          &th_dqo 0 0,         &none,               &none,               &th_qmark 0 0,       &kp MINUS,           &kp PLUS,            &lt SMART COMMA, \
-// &none,               &mc_lt,              &mc_gt,              &th_bti 0 0,         &none,               &none,               &th_excl 0 0,        &kp SLASH,           &kp STAR,            &none, \
-//                                           &none,               &trans,              &hlt NUM_CP SPACE,   &none,               &trans,              &none
+#define ROMAO_LAYER_SYMBOLS \
+&none,               &mc_tilde,           &kp HASH,            &th_sqo 0 0,         &none,               &none,               &th_perc 0 0,        &th_eql 0 0,         &th_colon 0 0,       &none, \
+&kp AT,              &th_caret_z 0 0,     &kp DOLLAR,          &th_dqo 0 0,         &none,               &none,               &th_qmark 0 0,       &kp MINUS,           &kp PLUS,            &lt SMART COMMA, \
+&none,               &mc_lt,              &mc_gt,              &th_bti 0 0,         &none,               &none,               &th_excl 0 0,        &kp SLASH,           &kp STAR,            &none, \
+                                          &none,               &trans,              &hlt NUM_CP SPACE,   &none,               &trans,              &none
 
 // #define ROMAO_LAYER_SENTENCE_CASE \
 // &kp LS(Q),           &kp LS(B),           &kp LS(M),           &kp LS(G),           &kp LS(K),           &kp LS(X),           &kp LS(L),           &kp LS(O),           &kp LS(U),           &kp LS(Y), \
