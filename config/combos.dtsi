@@ -17,10 +17,10 @@
 ZMK_COMBO(clear_layer, &to TBASE, LEC REC)
 
 // Esc
-ZMK_COMBO(mouse_combo, &kp ESC, LM1 RM1, ALL, COMBO_TERM_FAST, COMBO_IDLE_FAST)
+// ZMK_COMBO(mouse_combo, &kp ESC, LM1 RM1, ALL, COMBO_TERM_FAST, COMBO_IDLE_FAST)
 
 // Numword
-ZMK_COMBO(num_combo, &num_word U_NU, RH1 LM1, ALL, COMBO_TERM_FAST, COMBO_IDLE_FAST)
+// ZMK_COMBO(num_combo, &num_word U_NU, RH1 LM1, ALL, COMBO_TERM_FAST, COMBO_IDLE_FAST)
 
 // Navword
-ZMK_COMBO(nav_combo, &nav_word U_NAV, LH1 RM1, ALL, COMBO_TERM_FAST, COMBO_IDLE_FAST)
+// ZMK_COMBO(nav_combo, &nav_word U_NAV, LH1 RM1, ALL, COMBO_TERM_FAST, COMBO_IDLE_FAST)
