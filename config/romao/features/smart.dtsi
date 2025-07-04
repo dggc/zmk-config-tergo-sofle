@@ -8,16 +8,16 @@
 / {
     smart {
         
-        // // ********************** CANCEL ********************** //
+        // ********************** CANCEL ********************** //
 
-        // tc_cancel: tc_cancel {
-		// 	compatible = "zmk,behavior-macro";
-        //     #binding-cells = <0>;
-        //     wait-ms = <10>;
-        //     tap-ms = <10>;
-        //     bindings = <&macro_tap &kp K_CANCEL &to ALPHA1>;
-        // };
-        // LAYERTAP_TP(lt_cancel,     &tc_cancel)
+        tc_cancel: tc_cancel {
+			compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <10>;
+            tap-ms = <10>;
+            bindings = <&macro_tap &kp K_CANCEL &to ALPHA1>;
+        };
+        LAYERTAP_TP(lt_cancel,     &tc_cancel)
 
         // // ********************** SMART PLAIN ALPHAS ********************** //
 
@@ -157,7 +157,7 @@
         MACRO(mc_msk_snake, &kp UNDERSCORE &sl SPACING)
         MACRO(mc_msk_kebab, &kp MINUS &sl SPACING)
         MACRO(mc_msk_slash, &kp SLASH &sl SPACING)
-        // MACRO(mc_msk_space, &kp SPACE &to ALPHA1)
+        MACRO(mc_msk_space, &kp SPACE &to ALPHA1)
         MACRO(mc_msk_space_b, &kp BACKSPACE &kp SPACE &to ALPHA1)
 
         MACRO(mc_alpha2, &sl ALPHA2)
@@ -261,14 +261,14 @@
             bindings = <&mo>, <&mc_msk_camel>;
         };
 
-        // msk_spc: msk_spc {
-        //     compatible = "zmk,behavior-hold-tap";
-        //     #binding-cells = <2>;
-        //     tapping-term-ms = <QUICK_TAP_TERM>;
-        //     flavor = "tap-preferred";
-        //     quick-tap-ms = <0>;
-        //     bindings = <&mo>, <&mc_msk_space>;
-        // };
+        msk_spc: msk_spc {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            tapping-term-ms = <QUICK_TAP_TERM>;
+            flavor = "tap-preferred";
+            quick-tap-ms = <0>;
+            bindings = <&mo>, <&mc_msk_space>;
+        };
 
     };
 };
