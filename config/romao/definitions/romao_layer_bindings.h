@@ -19,7 +19,7 @@ ROMAO_X(SYMBOLS,  "SYM") \
 ROMAO_X(SENTENCE_CASE,  "CASE") \
 ROMAO_X(CCEDIL,  "Ç EXT") \
 ROMAO_X(SHIFTED_ALPHA2,  "ROMAK") \
-// ROMAO_X(CASE_ALPHA2,  "CASE") \
+ROMAO_X(CASE_ALPHA2,  "CASE") \
 // ROMAO_X(CASE_CCEDIL,  "CASE") \
 // ROMAO_X(SHORTCUTS,  "SHORTS") \
 // ROMAO_X(MEHS,  "MEHS") \
@@ -126,11 +126,11 @@ ROMAO_X(SHIFTED_ALPHA2,  "ROMAK") \
 &none,               &kp LS(J),           &mc_ced_s,           &reversed_magic_c,   &none,               &none,               &ac_otil_s,          &ac_acir_s,          &ac_ecir_s,          &none, \
                                           &none,               &mc_sqo,             &trans,              &kp SPACE,           &mc_sqo,             &none
 
-// #define ROMAO_LAYER_CASE_ALPHA2 \
-// &none,               &kp RS(Q),           &mc_qu_c,            &kp RS(K),           &none,               &none,               &ac_ocir_c,          &ac_oacu_c,          &ac_uacu_c,          &none, \
-// &kp RS(Y),           &kp RS(Z),           &kp RS(X),           &kp RS(W),           &none,               &none,               &ac_atil_c,          &ac_aacu_c,          &ac_eacu_c,          &ac_iacu_c, \
-// &none,               &kp RS(J),           &mc_ced_c,           &reversed_magic_c,   &none,               &none,               &ac_otil_c,          &ac_acir_c,          &ac_ecir_c,          &none, \
-//                                           &none,               &mc_sqo,             &trans,              &kp SPACE,           &mc_sqo,             &none
+#define ROMAO_LAYER_CASE_ALPHA2 \
+&none,               &kp RS(Q),           &mc_qu_c,            &kp RS(K),           &none,               &none,               &ac_ocir_c,          &ac_oacu_c,          &ac_uacu_c,          &none, \
+&kp RS(Y),           &kp RS(Z),           &kp RS(X),           &kp RS(W),           &none,               &none,               &ac_atil_c,          &ac_aacu_c,          &ac_eacu_c,          &ac_iacu_c, \
+&none,               &kp RS(J),           &mc_ced_c,           &reversed_magic_c,   &none,               &none,               &ac_otil_c,          &ac_acir_c,          &ac_ecir_c,          &none, \
+                                          &none,               &mc_sqo,             &trans,              &kp SPACE,           &mc_sqo,             &none
 
 // #define ROMAO_LAYER_CASE_CCEDIL \
 // &none,               &none,               &none,               &none,               &none,               &none,               &none,               &trans,              &trans,              &none, \
