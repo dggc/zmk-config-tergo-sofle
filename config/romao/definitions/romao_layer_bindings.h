@@ -7,7 +7,7 @@
 ROMAO_X(DEFAULT,   "ROMAK") \
 ROMAO_X(CAMEL_CASE,  "CAMEL") \
 ROMAO_X(SNAKE_CASE,  "SNAKE") \
-// ROMAO_X(CONSTANT,  "CONST") \
+ROMAO_X(CONSTANT,  "CONST") \
 // ROMAO_X(KEBAB_CASE,  "KEBAB") \
 // ROMAO_X(SLASH_CASE,  "SLASH") \
 // ROMAO_X(SPACING,  "SPACE") \
@@ -54,11 +54,11 @@ ROMAO_X(SNAKE_CASE,  "SNAKE") \
 &trans,              &trans,              &trans,              &trans,              &trans,              &trans,              &trans,              &trans,              &trans,              &trans, \
                                           &trans,              &trans,              &msk_unds NUM 0,     &trans,              &trans,              &trans
 
-// #define ROMAO_LAYER_CONSTANT \
-// &kp RS(Q),           &kp RS(B),           &kp RS(M),           &kp RS(G),           &kp RS(K),           &kp RS(X),           &kp RS(L),           &kp RS(O),           &kp RS(U),           &kp RS(Y), \
-// &lt SHORTS RS(D),    &mt LCTL RS(N),      &mt LALT RS(S),      &mt LSFT RS(T),      &kp RS(W),           &kp RS(Z),           &mt LSFT RS(R),      &mt LALT RS(A),      &mt LCTL RS(E),      &lt SHORTS RS(I), \
-// &mc_qu_c,            &mt LGUI RS(F),      &mt LGUI RS(C),      &mt LGUI RS(P),      &kp RS(V),           &kp RS(J),           &ht_magic_c LGUI 0,  &lt_comma SHORTS 0,  &th_dot 0 0,         &trans, \
-//                                           &trans,              &trans,              &msk_unds NUM 0,     &lt_case_a2 SYM 0,   &trans,              &trans
+#define ROMAO_LAYER_CONSTANT \
+&kp RS(Q),           &kp RS(B),           &kp RS(M),           &kp RS(G),           &kp RS(K),           &kp RS(X),           &kp RS(L),           &kp RS(O),           &kp RS(U),           &kp RS(Y), \
+&lt SHORTS RS(D),    &mt LCTL RS(N),      &mt LALT RS(S),      &mt LSFT RS(T),      &kp RS(W),           &kp RS(Z),           &mt LSFT RS(R),      &mt LALT RS(A),      &mt LCTL RS(E),      &lt SHORTS RS(I), \
+&mc_qu_c,            &mt LGUI RS(F),      &mt LGUI RS(C),      &mt LGUI RS(P),      &kp RS(V),           &kp RS(J),           &ht_magic_c LGUI 0,  &lt_comma SHORTS 0,  &th_dot 0 0,         &trans, \
+                                          &trans,              &trans,              &msk_unds NUM 0,     &lt_case_a2 SYM 0,   &trans,              &trans
 
 // #define ROMAO_LAYER_KEBAB_CASE \
 // &trans,              &trans,              &trans,              &trans,              &trans,              &trans,              &trans,              &trans,              &trans,              &trans, \

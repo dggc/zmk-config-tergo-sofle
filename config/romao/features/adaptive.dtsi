@@ -70,14 +70,14 @@
             ADAPTIVE(v_s    , &kp V      , LS(A) LS(E) LS(I) LS(O) LS(U) )
         };
 
-        // magic_key_c: magic_key_c {
-        //     compatible = "zmk,behavior-adaptive-key";
-        //     #binding-cells = <0>;
-        //     bindings = <&kp RS(H)>;
+        magic_key_c: magic_key_c {
+            compatible = "zmk,behavior-adaptive-key";
+            #binding-cells = <0>;
+            bindings = <&kp RS(H)>;
 
-        //     ADAPTIVE(v_c    , &kp RS(V)  , RS(A) RS(E) RS(I) RS(O) RS(U) )
-        //     ADAPTIVE(h_spc  , &kp LS(H)  , SPACE )
-        // };
+            ADAPTIVE(v_c    , &kp RS(V)  , RS(A) RS(E) RS(I) RS(O) RS(U) )
+            ADAPTIVE(h_spc  , &kp LS(H)  , SPACE )
+        };
 
         ht_magic: ht_magic {
             compatible = "zmk,behavior-hold-tap";
@@ -88,14 +88,14 @@
             bindings = <&kp>, <&magic_key>;
         };
 
-        // ht_magic_c: ht_magic_c {
-        //     compatible = "zmk,behavior-hold-tap";
-        //     #binding-cells = <2>;
-        //     tapping-term-ms = <QUICK_TAP_TERM>;
-        //     flavor = "tap-preferred";
-        //     quick-tap-ms = <0>;
-        //     bindings = <&kp>, <&magic_key_c>;
-        // };
+        ht_magic_c: ht_magic_c {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            tapping-term-ms = <QUICK_TAP_TERM>;
+            flavor = "tap-preferred";
+            quick-tap-ms = <0>;
+            bindings = <&kp>, <&magic_key_c>;
+        };
 
         // // ******************** REVERSED MAGIC KEY ******************** //
 
