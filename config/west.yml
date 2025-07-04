@@ -36,7 +36,6 @@ manifest:
     # https://github.com/zmkfirmware/zephyr/pull/40 is merged.
     - name: zephyr
       revision: v3.5.0+zmk-fixes
-      clone-depth: 1
 
   self:
     path: config
