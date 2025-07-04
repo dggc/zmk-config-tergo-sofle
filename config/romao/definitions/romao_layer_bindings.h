@@ -16,7 +16,7 @@ ROMAO_X(CAPSLINE,  "CASE") \
 ROMAO_X(ALPHA2,  "ROMAK") \
 ROMAO_X(NUMBERS,  "NUM") \
 ROMAO_X(SYMBOLS,  "SYM") \
-// ROMAO_X(SENTENCE_CASE,  "CASE") \
+ROMAO_X(SENTENCE_CASE,  "CASE") \
 // ROMAO_X(CCEDIL,  "Ç EXT") \
 // ROMAO_X(SHIFTED_ALPHA2,  "ROMAK") \
 // ROMAO_X(CASE_ALPHA2,  "CASE") \
@@ -108,11 +108,11 @@ ROMAO_X(SYMBOLS,  "SYM") \
 &none,               &mc_lt,              &mc_gt,              &th_bti 0 0,         &none,               &none,               &th_excl 0 0,        &kp SLASH,           &kp STAR,            &none, \
                                           &none,               &trans,              &hlt NUM_CP SPACE,   &none,               &trans,              &none
 
-// #define ROMAO_LAYER_SENTENCE_CASE \
-// &kp LS(Q),           &kp LS(B),           &kp LS(M),           &kp LS(G),           &kp LS(K),           &kp LS(X),           &kp LS(L),           &kp LS(O),           &kp LS(U),           &kp LS(Y), \
-// &kp LS(D),           &mt LCTL LS(N),      &mt LALT LS(S),      &mt LSFT LS(T),      &kp LS(W),           &kp LS(Z),           &mt LSFT LS(R),      &mt LALT LS(A),      &mt LCTL LS(E),      &kp LS(I), \
-// &mc_qu_s,            &mt LGUI LS(F),      &mt LGUI LS(C),      &mt LGUI LS(P),      &kp LS(V),           &kp LS(J),           &ht_magic_c LGUI 0,  &lt_comma SHORTS 0,  &th_dot 0 0,         &kp LS(H), \
-//                                           &trans,              &trans,              &trans,              &lt_sft_a2 SYM_CP 0, &trans,              &trans
+#define ROMAO_LAYER_SENTENCE_CASE \
+&kp LS(Q),           &kp LS(B),           &kp LS(M),           &kp LS(G),           &kp LS(K),           &kp LS(X),           &kp LS(L),           &kp LS(O),           &kp LS(U),           &kp LS(Y), \
+&kp LS(D),           &mt LCTL LS(N),      &mt LALT LS(S),      &mt LSFT LS(T),      &kp LS(W),           &kp LS(Z),           &mt LSFT LS(R),      &mt LALT LS(A),      &mt LCTL LS(E),      &kp LS(I), \
+&mc_qu_s,            &mt LGUI LS(F),      &mt LGUI LS(C),      &mt LGUI LS(P),      &kp LS(V),           &kp LS(J),           &ht_magic_c LGUI 0,  &lt_comma SHORTS 0,  &th_dot 0 0,         &kp LS(H), \
+                                          &trans,              &trans,              &trans,              &lt_sft_a2 SYM_CP 0, &trans,              &trans
 
 // #define ROMAO_LAYER_CCEDIL \
 // &none,               &none,               &none,               &none,               &none,               &none,               &none,               &trans,              &trans,              &none, \

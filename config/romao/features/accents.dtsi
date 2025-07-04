@@ -20,7 +20,7 @@
         ACCENT(ac_uacu, U, SQT  )
 
         MACRO(mc_qu,       &kp Q &kp U &sl ALTREP2)
-        // MACRO(mc_qu_s,     &kp LS(Q) &kp U &sl ALTREP2)
+        MACRO(mc_qu_s,     &kp LS(Q) &kp U &sl ALTREP2)
         MACRO(mc_qu_c,     &kp RS(Q) &kp RS(U) &sl ALTREP2)
         // MACRO(mc_aotil,    &macro_tap &macro_wait_time 10 &macro_tap &ac_atil &kp O)
         // MACRO(mc_aotil_c,  &macro_tap &macro_wait_time 10 &macro_tap &ac_atil_c &kp RS(O))
