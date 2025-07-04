@@ -306,9 +306,9 @@ ZMK_LAYER(Mouse,
 #include "miryoku/mapping/60/sofle.h"
 #include "miryoku/miryoku.dtsi"
 
-#define LINUX
-#include "romao/mappings/sofle.h"
-#include "romao/definitions/includes.h"
+// #define LINUX
+// #include "romao/mappings/sofle.h"
+// #include "romao/definitions/includes.h"
 // #include "romao/definitions/romao_layer_bindings.h"
 // #include "romao/definitions/romao_layers.dtsi"
 
