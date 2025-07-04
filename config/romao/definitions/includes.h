@@ -13,7 +13,7 @@
 #include "../features/mouse.dtsi"
 
 #include "../features/accents.dtsi"
-// #include "../features/shortcuts.dtsi"
+#include "../features/shortcuts.dtsi"
 #include "../features/select.dtsi"
 
 // #ifdef MACOS
@@ -29,12 +29,12 @@
 // #endif
 
 #include "../features/sentence.dtsi"
-// #include "../features/smart.dtsi"
-// #include "../features/adaptive.dtsi"
+#include "../features/smart.dtsi"
+#include "../features/adaptive.dtsi"
 #include "../features/symbols.dtsi"
 
-// #include "../features/combos.dtsi"
-// #include "../features/leader.dtsi"
+#include "../features/combos.dtsi"
+#include "../features/leader.dtsi"
 
 // #if __has_include("../secret.dtsi")
 // #include "../secret.dtsi"
