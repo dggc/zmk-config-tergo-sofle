@@ -6,7 +6,7 @@
 #define ROMAO_LAYER_LIST \
 ROMAO_X(DEFAULT,   "ROMAK") \
 ROMAO_X(CAMEL_CASE,  "CAMEL") \
-// ROMAO_X(SNAKE_CASE,  "SNAKE") \
+ROMAO_X(SNAKE_CASE,  "SNAKE") \
 // ROMAO_X(CONSTANT,  "CONST") \
 // ROMAO_X(KEBAB_CASE,  "KEBAB") \
 // ROMAO_X(SLASH_CASE,  "SLASH") \
@@ -48,11 +48,11 @@ ROMAO_X(CAMEL_CASE,  "CAMEL") \
 &trans,              &trans,              &trans,              &trans,              &trans,              &trans,              &trans,              &trans,              &trans,              &trans, \
                                           &trans,              &trans,              &msk_sft NUM 0,      &trans,              &trans,              &trans
 
-// #define ROMAO_LAYER_SNAKE_CASE \
-// &trans,              &trans,              &trans,              &trans,              &trans,              &trans,              &trans,              &trans,              &trans,              &trans, \
-// &trans,              &trans,              &trans,              &trans,              &trans,              &trans,              &trans,              &trans,              &trans,              &trans, \
-// &trans,              &trans,              &trans,              &trans,              &trans,              &trans,              &trans,              &trans,              &trans,              &trans, \
-//                                           &trans,              &trans,              &msk_unds NUM 0,     &trans,              &trans,              &trans
+#define ROMAO_LAYER_SNAKE_CASE \
+&trans,              &trans,              &trans,              &trans,              &trans,              &trans,              &trans,              &trans,              &trans,              &trans, \
+&trans,              &trans,              &trans,              &trans,              &trans,              &trans,              &trans,              &trans,              &trans,              &trans, \
+&trans,              &trans,              &trans,              &trans,              &trans,              &trans,              &trans,              &trans,              &trans,              &trans, \
+                                          &trans,              &trans,              &msk_unds NUM 0,     &trans,              &trans,              &trans
 
 // #define ROMAO_LAYER_CONSTANT \
 // &kp RS(Q),           &kp RS(B),           &kp RS(M),           &kp RS(G),           &kp RS(K),           &kp RS(X),           &kp RS(L),           &kp RS(O),           &kp RS(U),           &kp RS(Y), \
