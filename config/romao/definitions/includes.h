@@ -12,9 +12,9 @@
 
 #include "../features/mouse.dtsi"
 
-// #include "../features/accents.dtsi"
+#include "../features/accents.dtsi"
 // #include "../features/shortcuts.dtsi"
-// #include "../features/select.dtsi"
+#include "../features/select.dtsi"
 
 // #ifdef MACOS
 // #include "../features/macos/accents.dtsi"
