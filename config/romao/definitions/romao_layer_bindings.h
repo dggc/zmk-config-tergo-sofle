@@ -9,7 +9,7 @@ ROMAO_X(CAMEL_CASE,  "CAMEL") \
 ROMAO_X(SNAKE_CASE,  "SNAKE") \
 ROMAO_X(CONSTANT,  "CONST") \
 ROMAO_X(KEBAB_CASE,  "KEBAB") \
-// ROMAO_X(SLASH_CASE,  "SLASH") \
+ROMAO_X(SLASH_CASE,  "SLASH") \
 // ROMAO_X(SPACING,  "SPACE") \
 // ROMAO_X(CAPSWORD,  "CASE") \
 // ROMAO_X(CAPSLINE,  "CASE") \
@@ -66,11 +66,11 @@ ROMAO_X(KEBAB_CASE,  "KEBAB") \
 &trans,              &trans,              &trans,              &trans,              &trans,              &trans,              &trans,              &trans,              &trans,              &trans, \
                                           &trans,              &trans,              &msk_dash NUM 0,     &trans,              &trans,              &trans
 
-// #define ROMAO_LAYER_SLASH_CASE \
-// &trans,              &trans,              &trans,              &trans,              &trans,              &trans,              &trans,              &trans,              &trans,              &trans, \
-// &trans,              &trans,              &trans,              &trans,              &trans,              &trans,              &trans,              &trans,              &trans,              &trans, \
-// &trans,              &trans,              &trans,              &trans,              &trans,              &trans,              &trans,              &trans,              &trans,              &trans, \
-//                                           &trans,              &trans,              &msk_slash NUM 0,    &trans,              &trans,              &trans
+#define ROMAO_LAYER_SLASH_CASE \
+&trans,              &trans,              &trans,              &trans,              &trans,              &trans,              &trans,              &trans,              &trans,              &trans, \
+&trans,              &trans,              &trans,              &trans,              &trans,              &trans,              &trans,              &trans,              &trans,              &trans, \
+&trans,              &trans,              &trans,              &trans,              &trans,              &trans,              &trans,              &trans,              &trans,              &trans, \
+                                          &trans,              &trans,              &msk_slash NUM 0,    &trans,              &trans,              &trans
 
 // #define ROMAO_LAYER_SPACING \
 // &trans,              &trans,              &trans,              &trans,              &trans,              &trans,              &trans,              &trans,              &trans,              &trans, \
