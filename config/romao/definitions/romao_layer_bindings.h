@@ -5,7 +5,7 @@
 
 #define ROMAO_LAYER_LIST \
 ROMAO_X(DEFAULT,   "ROMAK") \
-// ROMAO_X(CAMEL_CASE,  "CAMEL") \
+ROMAO_X(CAMEL_CASE,  "CAMEL") \
 // ROMAO_X(SNAKE_CASE,  "SNAKE") \
 // ROMAO_X(CONSTANT,  "CONST") \
 // ROMAO_X(KEBAB_CASE,  "KEBAB") \
@@ -42,11 +42,11 @@ ROMAO_X(DEFAULT,   "ROMAK") \
 &mc_qu,              &mt LGUI F,          &mt LGUI C,          &mt LGUI P,          &kp V,               &kp J,               &ht_magic LGUI 0,    &lt_comma SHORTS 0,  &th_dot 0 0,         &kp H, \
                                           &key_repeat,         &ht_repeat NAV 0,    &ltn_num_spc 0 0,    &msl_sym_a2 0 0,     &ht_shift MEDIA 0,   &key_repeat
 
-// #define ROMAO_LAYER_CAMEL_CASE \
-// &trans,              &trans,              &trans,              &trans,              &trans,              &trans,              &trans,              &trans,              &trans,              &trans, \
-// &trans,              &trans,              &trans,              &trans,              &trans,              &trans,              &trans,              &trans,              &trans,              &trans, \
-// &trans,              &trans,              &trans,              &trans,              &trans,              &trans,              &trans,              &trans,              &trans,              &trans, \
-//                                           &trans,              &trans,              &msk_sft NUM 0,      &trans,              &trans,              &trans
+#define ROMAO_LAYER_CAMEL_CASE \
+&trans,              &trans,              &trans,              &trans,              &trans,              &trans,              &trans,              &trans,              &trans,              &trans, \
+&trans,              &trans,              &trans,              &trans,              &trans,              &trans,              &trans,              &trans,              &trans,              &trans, \
+&trans,              &trans,              &trans,              &trans,              &trans,              &trans,              &trans,              &trans,              &trans,              &trans, \
+                                          &trans,              &trans,              &msk_sft NUM 0,      &trans,              &trans,              &trans
 
 // #define ROMAO_LAYER_SNAKE_CASE \
 // &trans,              &trans,              &trans,              &trans,              &trans,              &trans,              &trans,              &trans,              &trans,              &trans, \
