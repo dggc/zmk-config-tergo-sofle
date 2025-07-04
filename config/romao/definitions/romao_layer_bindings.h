@@ -132,11 +132,11 @@ ROMAO_X(CASE_ALPHA2,  "CASE") \
 &none,               &kp RS(J),           &mc_ced_c,           &reversed_magic_c,   &none,               &none,               &ac_otil_c,          &ac_acir_c,          &ac_ecir_c,          &none, \
                                           &none,               &mc_sqo,             &trans,              &kp SPACE,           &mc_sqo,             &none
 
-// #define ROMAO_LAYER_CASE_CCEDIL \
-// &none,               &none,               &none,               &none,               &none,               &none,               &none,               &trans,              &trans,              &none, \
-// &none,               &none,               &none,               &mc_aotil_c,         &none,               &none,               &ac_atil_c,          &trans,              &none,               &none, \
-// &none,               &none,               &none,               &mc_otiles_c,        &none,               &none,               &ac_otil_c,          &trans,              &trans,              &none, \
-//                                           &none,               &sl CASE_A2,         &trans,              &trans,              &trans,              &none
+#define ROMAO_LAYER_CASE_CCEDIL \
+&none,               &none,               &none,               &none,               &none,               &none,               &none,               &trans,              &trans,              &none, \
+&none,               &none,               &none,               &mc_aotil_c,         &none,               &none,               &ac_atil_c,          &trans,              &none,               &none, \
+&none,               &none,               &none,               &mc_otiles_c,        &none,               &none,               &ac_otil_c,          &trans,              &trans,              &none, \
+                                          &none,               &sl CASE_A2,         &trans,              &trans,              &trans,              &none
 
 // #define ROMAO_LAYER_SHORTCUTS \
 // &none,               &mc_emoji,           &mc_files,           &mc_screenshot,      &none,               &none,               &kp C_SLEEP,         &to NUM,             &to PLAIN1,          &none, \
