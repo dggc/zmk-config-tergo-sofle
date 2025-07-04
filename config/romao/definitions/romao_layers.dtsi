@@ -7,7 +7,7 @@
   keymap {
     compatible = "zmk,keymap";
 #define ROMAO_X(LAYER, STRING) \
-    LAYER { \
+     ROMAO_##LAYER { \
       display-name = STRING; \
       bindings = < R_MACRO_VA_ARGS(ROMAO_LAYER_MAPPING, ROMAO_LAYER_##LAYER) >; \
     };
