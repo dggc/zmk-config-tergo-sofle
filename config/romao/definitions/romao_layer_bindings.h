@@ -14,7 +14,7 @@ ROMAO_X(SPACING,  "SPACE") \
 ROMAO_X(CAPSWORD,  "CASE") \
 ROMAO_X(CAPSLINE,  "CASE") \
 ROMAO_X(ALPHA2,  "ROMAK") \
-// ROMAO_X(NUMBERS,  "NUM") \
+ROMAO_X(NUMBERS,  "NUM") \
 // ROMAO_X(SYMBOLS,  "SYM") \
 // ROMAO_X(SENTENCE_CASE,  "CASE") \
 // ROMAO_X(CCEDIL,  "Ç EXT") \
@@ -96,11 +96,11 @@ ROMAO_X(ALPHA2,  "ROMAK") \
 &none,               &kp J,               &mc_ced,             &reversed_magic,     &none,               &none,               &ac_otil,            &ac_acir,            &ac_ecir,            &none, \
                                           &none,               &mc_sqo,             &trans,              &kp SPACE,           &mc_sqo,             &none
 
-// #define ROMAO_LAYER_NUMBERS \
-// &none,               &th_lbrc 0 0,        &th_rbrc 0 0,        &kp BSLH,            &none,               &none,               &mc_n7,              &mc_n8,              &mc_n9,              &none, \
-// &lt_deg FUN 0,       &th_lpar 0 0,        &th_rpar 0 0,        &kp AMPS,            &none,               &none,               &mc_n4,              &mc_n5,              &mc_n6,              &kp DOT, \
-// &none,               &th_lbkt 0 0,        &th_rbkt 0 0,        &kp PIPE,            &none,               &none,               &mc_n1,              &mc_n2,              &mc_n3,              &none, \
-//                                           &none,               &trans,              &trans,              &hlt SYM SPACE,      &lt_n0 MEDIA 0,      &none
+#define ROMAO_LAYER_NUMBERS \
+&none,               &th_lbrc 0 0,        &th_rbrc 0 0,        &kp BSLH,            &none,               &none,               &mc_n7,              &mc_n8,              &mc_n9,              &none, \
+&lt_deg FUN 0,       &th_lpar 0 0,        &th_rpar 0 0,        &kp AMPS,            &none,               &none,               &mc_n4,              &mc_n5,              &mc_n6,              &kp DOT, \
+&none,               &th_lbkt 0 0,        &th_rbkt 0 0,        &kp PIPE,            &none,               &none,               &mc_n1,              &mc_n2,              &mc_n3,              &none, \
+                                          &none,               &trans,              &trans,              &hlt SYM SPACE,      &lt_n0 MEDIA 0,      &none
 
 // #define ROMAO_LAYER_SYMBOLS \
 // &none,               &mc_tilde,           &kp HASH,            &th_sqo 0 0,         &none,               &none,               &th_perc 0 0,        &th_eql 0 0,         &th_colon 0 0,       &none, \

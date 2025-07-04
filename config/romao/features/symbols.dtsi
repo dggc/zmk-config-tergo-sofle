@@ -29,18 +29,18 @@
 
         // // Numbers
 
-        // SHIFT_MEH(mc_n0,              &kp N0, &kp KP_N0)
-        // SHIFT_MEH(mc_n1,              &kp N1, &kp KP_N1)
-        // SHIFT_MEH(mc_n2,              &kp N2, &kp KP_N2)
-        // SHIFT_MEH(mc_n3,              &kp N3, &kp KP_N3)
-        // SHIFT_MEH(mc_n4,              &kp N4, &kp KP_N4)
-        // SHIFT_MEH(mc_n5,              &kp N5, &kp KP_N5)
-        // SHIFT_MEH(mc_n6,              &kp N6, &kp KP_N6)
-        // SHIFT_MEH(mc_n7,              &kp N7, &kp KP_N7)
-        // SHIFT_MEH(mc_n8,              &kp N8, &kp KP_N8)
-        // SHIFT_MEH(mc_n9,              &kp N9, &kp KP_N9)
+        SHIFT_MEH(mc_n0,              &kp N0, &kp KP_N0)
+        SHIFT_MEH(mc_n1,              &kp N1, &kp KP_N1)
+        SHIFT_MEH(mc_n2,              &kp N2, &kp KP_N2)
+        SHIFT_MEH(mc_n3,              &kp N3, &kp KP_N3)
+        SHIFT_MEH(mc_n4,              &kp N4, &kp KP_N4)
+        SHIFT_MEH(mc_n5,              &kp N5, &kp KP_N5)
+        SHIFT_MEH(mc_n6,              &kp N6, &kp KP_N6)
+        SHIFT_MEH(mc_n7,              &kp N7, &kp KP_N7)
+        SHIFT_MEH(mc_n8,              &kp N8, &kp KP_N8)
+        SHIFT_MEH(mc_n9,              &kp N9, &kp KP_N9)
 
-        // LAYERTAP_TP(lt_n0,            &mc_n0)
+        LAYERTAP_TP(lt_n0,            &mc_n0)
 
         MACRO(mc_sqo,                 &kp SQT &kp SPACE)
         // MACRO(mc_end_sqo,             &kp END &mc_sqo)
@@ -65,33 +65,33 @@
         // MACRO(mc_right_or,            &kp RIGHT &kp PIPE &kp PIPE)
         // TAPHOLD_TP(th_or,             &mc_or, &mc_right_or)
 
-        // MACRO(mc_rpar,                &kp RPAR)
-        // MACRO(mc_end_rpar,            &kp END &kp RPAR)
-        // TAPHOLD_TP(th_rpar,           &mc_rpar, &mc_end_rpar)
+        MACRO(mc_rpar,                &kp RPAR)
+        MACRO(mc_end_rpar,            &kp END &kp RPAR)
+        TAPHOLD_TP(th_rpar,           &mc_rpar, &mc_end_rpar)
 
-        // MACRO(mc_lpar,                &kp LPAR)
-        // MACRO(mc_end_lpar,            &kp END &kp LPAR)
-        // TAPHOLD_TP(th_lpar,           &mc_lpar, &mc_end_lpar)
+        MACRO(mc_lpar,                &kp LPAR)
+        MACRO(mc_end_lpar,            &kp END &kp LPAR)
+        TAPHOLD_TP(th_lpar,           &mc_lpar, &mc_end_lpar)
 
-        // MACRO(mc_rbkt,                &kp RBKT)
-        // MACRO(mc_end_rbkt,            &kp END &kp RBKT)
-        // TAPHOLD_TP(th_rbkt,           &mc_rbkt, &mc_end_rbkt)
+        MACRO(mc_rbkt,                &kp RBKT)
+        MACRO(mc_end_rbkt,            &kp END &kp RBKT)
+        TAPHOLD_TP(th_rbkt,           &mc_rbkt, &mc_end_rbkt)
 
-        // MACRO(mc_lbkt,                &kp LBKT)
-        // MACRO(mc_end_lbkt,            &kp END &kp LBKT)
-        // TAPHOLD_TP(th_lbkt,           &mc_lbkt, &mc_end_lbkt)
+        MACRO(mc_lbkt,                &kp LBKT)
+        MACRO(mc_end_lbkt,            &kp END &kp LBKT)
+        TAPHOLD_TP(th_lbkt,           &mc_lbkt, &mc_end_lbkt)
 
         // MACRO(mc_qmark,               &kp QMARK )
         // MACRO(mc_end_qmark,           &kp END &kp QMARK )
         // TAPHOLD_TP(th_qmark,          &mc_qmark, &mc_end_qmark)
 
-        // MACRO(mc_rbrc,                &kp RBRC)
-        // MACRO(mc_end_rbrc,            &kp END &kp RBRC)
-        // TAPHOLD_TP(th_rbrc,           &mc_rbrc, &mc_end_rbrc)
+        MACRO(mc_rbrc,                &kp RBRC)
+        MACRO(mc_end_rbrc,            &kp END &kp RBRC)
+        TAPHOLD_TP(th_rbrc,           &mc_rbrc, &mc_end_rbrc)
 
-        // MACRO(mc_lbrc,                &kp LBRC)
-        // MACRO(mc_end_lbrc,            &kp END &kp LBRC)
-        // TAPHOLD_TP(th_lbrc,           &mc_lbrc, &mc_end_lbrc)
+        MACRO(mc_lbrc,                &kp LBRC)
+        MACRO(mc_end_lbrc,            &kp END &kp LBRC)
+        TAPHOLD_TP(th_lbrc,           &mc_lbrc, &mc_end_lbrc)
 
         // MACRO(mc_pars,                &kp LPAR &kp RPAR)
         // MACRO(mc_end_pars,            &kp END &kp LPAR &kp RPAR)
@@ -100,8 +100,8 @@
         // MACRO(mc_brackets,            &kp LBKT &kp RBKT)
         // LAYERTAP_TP(lt_brackets,      &mc_brackets)
 
-        // MACRO(mc_deg,                 &kp LS(LA(N8)))
-        // LAYERTAP_TP(lt_deg,           &mc_deg)
+        MACRO(mc_deg,                 &kp LS(LA(N8)))
+        LAYERTAP_TP(lt_deg,           &mc_deg)
 
         // // Symbols
 
