@@ -12,7 +12,7 @@ ROMAO_X(KEBAB_CASE,  "KEBAB") \
 ROMAO_X(SLASH_CASE,  "SLASH") \
 ROMAO_X(SPACING,  "SPACE") \
 ROMAO_X(CAPSWORD,  "CASE") \
-// ROMAO_X(CAPSLINE,  "CASE") \
+ROMAO_X(CAPSLINE,  "CASE") \
 // ROMAO_X(ALPHA2,  "ROMAK") \
 // ROMAO_X(NUMBERS,  "NUM") \
 // ROMAO_X(SYMBOLS,  "SYM") \
@@ -84,11 +84,11 @@ ROMAO_X(CAPSWORD,  "CASE") \
 &mc_qu_c,            &mt LGUI RS(F),      &mt LGUI RS(C),      &mt LGUI RS(P),      &kp RS(V),           &kp RS(J),           &ht_magic_c LGUI 0,  &lt_comma SHORTS 0,  &th_dot 0 0,         &kp RS(H), \
                                           &trans,              &trans,              &msk_spc NUM 0,      &lt_case_a2 SYM 0,   &lt_cancel MEDIA 0,  &trans
 
-// #define ROMAO_LAYER_CAPSLINE \
-// &kp RS(Q),           &kp RS(B),           &kp RS(M),           &kp RS(G),           &kp RS(K),           &kp RS(X),           &kp RS(L),           &kp RS(O),           &kp RS(U),           &kp RS(Y), \
-// &lt SHORTS RS(D),    &mt LCTL RS(N),      &mt LALT RS(S),      &mt LSFT RS(T),      &kp RS(W),           &kp RS(Z),           &mt LSFT RS(R),      &mt LALT RS(A),      &mt LCTL RS(E),      &lt SHORTS RS(I), \
-// &mc_qu_c,            &mt LGUI RS(F),      &mt LGUI RS(C),      &mt LGUI RS(P),      &kp RS(V),           &kp RS(J),           &ht_magic_c LGUI 0,  &lt_comma SHORTS 0,  &th_dot 0 0,         &kp RS(H), \
-//                                           &trans,              &trans,              &trans,              &lt_case_a2 SYM 0,   &lt_cancel MEDIA 0,  &trans
+#define ROMAO_LAYER_CAPSLINE \
+&kp RS(Q),           &kp RS(B),           &kp RS(M),           &kp RS(G),           &kp RS(K),           &kp RS(X),           &kp RS(L),           &kp RS(O),           &kp RS(U),           &kp RS(Y), \
+&lt SHORTS RS(D),    &mt LCTL RS(N),      &mt LALT RS(S),      &mt LSFT RS(T),      &kp RS(W),           &kp RS(Z),           &mt LSFT RS(R),      &mt LALT RS(A),      &mt LCTL RS(E),      &lt SHORTS RS(I), \
+&mc_qu_c,            &mt LGUI RS(F),      &mt LGUI RS(C),      &mt LGUI RS(P),      &kp RS(V),           &kp RS(J),           &ht_magic_c LGUI 0,  &lt_comma SHORTS 0,  &th_dot 0 0,         &kp RS(H), \
+                                          &trans,              &trans,              &trans,              &lt_case_a2 SYM 0,   &lt_cancel MEDIA 0,  &trans
 
 // #define ROMAO_LAYER_ALPHA2 \
 // &none,               &kp Q,               &mc_qu,              &kp K,               &none,               &none,               &ac_ocir,            &ac_oacu,            &ac_uacu,            &none, \
