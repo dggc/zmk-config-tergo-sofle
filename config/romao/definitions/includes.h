@@ -28,10 +28,10 @@
 // #include "../features/linux/select.dtsi"
 // #endif
 
-// #include "../features/sentence.dtsi"
+#include "../features/sentence.dtsi"
 // #include "../features/smart.dtsi"
-// #include "../features/adaptive.dtsi"
-// #include "../features/symbols.dtsi"
+#include "../features/adaptive.dtsi"
+#include "../features/symbols.dtsi"
 
 // #include "../features/combos.dtsi"
 // #include "../features/leader.dtsi"
