@@ -158,7 +158,7 @@
         MACRO(mc_msk_kebab, &kp MINUS &sl SPACING)
         MACRO(mc_msk_slash, &kp SLASH &sl SPACING)
         // MACRO(mc_msk_space, &kp SPACE &to ALPHA1)
-        // MACRO(mc_msk_space_b, &kp BACKSPACE &kp SPACE &to ALPHA1)
+        MACRO(mc_msk_space_b, &kp BACKSPACE &kp SPACE &to ALPHA1)
 
         MACRO(mc_alpha2, &sl ALPHA2)
         MACRO(mc_sft_a2, &sl SFT_A2)
@@ -243,14 +243,14 @@
             bindings = <&mo>, <&mc_msk_slash>;
         };
 
-        // msk_spcb: msk_spcb {
-        //     compatible = "zmk,behavior-hold-tap";
-        //     #binding-cells = <2>;
-        //     tapping-term-ms = <QUICK_TAP_TERM>;
-        //     flavor = "tap-preferred";
-        //     quick-tap-ms = <0>;
-        //     bindings = <&mo>, <&mc_msk_space_b>;
-        // };
+        msk_spcb: msk_spcb {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            tapping-term-ms = <QUICK_TAP_TERM>;
+            flavor = "tap-preferred";
+            quick-tap-ms = <0>;
+            bindings = <&mo>, <&mc_msk_space_b>;
+        };
 
         msk_sft: msk_sft {
             compatible = "zmk,behavior-hold-tap";

@@ -10,7 +10,7 @@ ROMAO_X(SNAKE_CASE,  "SNAKE") \
 ROMAO_X(CONSTANT,  "CONST") \
 ROMAO_X(KEBAB_CASE,  "KEBAB") \
 ROMAO_X(SLASH_CASE,  "SLASH") \
-// ROMAO_X(SPACING,  "SPACE") \
+ROMAO_X(SPACING,  "SPACE") \
 // ROMAO_X(CAPSWORD,  "CASE") \
 // ROMAO_X(CAPSLINE,  "CASE") \
 // ROMAO_X(ALPHA2,  "ROMAK") \
@@ -72,11 +72,11 @@ ROMAO_X(SLASH_CASE,  "SLASH") \
 &trans,              &trans,              &trans,              &trans,              &trans,              &trans,              &trans,              &trans,              &trans,              &trans, \
                                           &trans,              &trans,              &msk_slash NUM 0,    &trans,              &trans,              &trans
 
-// #define ROMAO_LAYER_SPACING \
-// &trans,              &trans,              &trans,              &trans,              &trans,              &trans,              &trans,              &trans,              &trans,              &trans, \
-// &trans,              &trans,              &trans,              &trans,              &trans,              &trans,              &trans,              &trans,              &trans,              &trans, \
-// &trans,              &trans,              &trans,              &trans,              &trans,              &trans,              &trans,              &trans,              &trans,              &trans, \
-//                                           &trans,              &trans,              &msk_spcb NUM 0,     &trans,              &trans,              &trans
+#define ROMAO_LAYER_SPACING \
+&trans,              &trans,              &trans,              &trans,              &trans,              &trans,              &trans,              &trans,              &trans,              &trans, \
+&trans,              &trans,              &trans,              &trans,              &trans,              &trans,              &trans,              &trans,              &trans,              &trans, \
+&trans,              &trans,              &trans,              &trans,              &trans,              &trans,              &trans,              &trans,              &trans,              &trans, \
+                                          &trans,              &trans,              &msk_spcb NUM 0,     &trans,              &trans,              &trans
 
 // #define ROMAO_LAYER_CAPSWORD \
 // &kp RS(Q),           &kp RS(B),           &kp RS(M),           &kp RS(G),           &kp RS(K),           &kp RS(X),           &kp RS(L),           &kp RS(O),           &kp RS(U),           &kp RS(Y), \
