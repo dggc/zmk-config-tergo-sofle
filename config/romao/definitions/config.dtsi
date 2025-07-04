@@ -7,47 +7,49 @@
 
  // Layers
 
-#define ALPHA1 18
+#define BASE_LAYER_VALUE 13
 
-#define CAMEL_CASE 19
-#define SNAKE_CASE 20
-#define CONST_CASE 21
-#define KEBAB_CASE 22
-#define SLASH_CASE 23
-#define SPACING 24
-#define CASE_A1 25
-#define CPLK_A1 26
+#define ALPHA1 (BASE_LAYER_VALUE + 0)
 
-#define ALPHA2 27
+#define CAMEL_CASE (BASE_LAYER_VALUE + 1)
+#define SNAKE_CASE (BASE_LAYER_VALUE + 2)
+#define CONST_CASE (BASE_LAYER_VALUE + 3)
+#define KEBAB_CASE (BASE_LAYER_VALUE + 4)
+#define SLASH_CASE (BASE_LAYER_VALUE + 5)
+#define SPACING (BASE_LAYER_VALUE + 6)
+#define CASE_A1 (BASE_LAYER_VALUE + 7)
+#define CPLK_A1 (BASE_LAYER_VALUE + 8)
 
-#define NUM 28
-#define SYM 29
+#define ALPHA2 (BASE_LAYER_VALUE + 9)
 
-#define SEN_CASE 30
-#define CCEDIL 31
-#define SFT_A2 32
-#define CASE_A2 33
-#define CASE_CCEDIL 34
+#define NUM (BASE_LAYER_VALUE + 10)
+#define SYM (BASE_LAYER_VALUE + 11)
 
-#define SHORTS 35
-#define MEHS 36
+#define SEN_CASE (BASE_LAYER_VALUE + 12)
+#define CCEDIL (BASE_LAYER_VALUE + 13)
+#define SFT_A2 (BASE_LAYER_VALUE + 14)
+#define CASE_A2 (BASE_LAYER_VALUE + 15)
+#define CASE_CCEDIL (BASE_LAYER_VALUE + 16)
 
-#define PLAIN1 37
-#define PLAIN2 38
-#define SFT_PLAIN2 39
-#define ALTREP2 40
+#define SHORTS (BASE_LAYER_VALUE + 17)
+#define MEHS (BASE_LAYER_VALUE + 18)
 
-#define NAV 41
+#define PLAIN1 (BASE_LAYER_VALUE + 19)
+#define PLAIN2 (BASE_LAYER_VALUE + 20)
+#define SFT_PLAIN2 (BASE_LAYER_VALUE + 21)
+#define ALTREP2 (BASE_LAYER_VALUE + 22)
 
-#define NUM_CP 42
-#define SYM_CP 43
+#define NAV (BASE_LAYER_VALUE + 23)
 
-#define MEDIA 44
-#define NAV_CP 45
+#define NUM_CP (BASE_LAYER_VALUE + 24)
+#define SYM_CP (BASE_LAYER_VALUE + 25)
 
-#define TEXT 46
-#define FUN 47
-#define SMART 48
+#define MEDIA (BASE_LAYER_VALUE + 26)
+#define NAV_CP (BASE_LAYER_VALUE + 27)
+
+#define TEXT (BASE_LAYER_VALUE + 28)
+#define FUN (BASE_LAYER_VALUE + 29)
+#define SMART (BASE_LAYER_VALUE + 30)
 
 // Settings
 
