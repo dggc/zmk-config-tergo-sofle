@@ -13,7 +13,7 @@ ROMAO_X(SLASH_CASE,  "SLASH") \
 ROMAO_X(SPACING,  "SPACE") \
 ROMAO_X(CAPSWORD,  "CASE") \
 ROMAO_X(CAPSLINE,  "CASE") \
-// ROMAO_X(ALPHA2,  "ROMAK") \
+ROMAO_X(ALPHA2,  "ROMAK") \
 // ROMAO_X(NUMBERS,  "NUM") \
 // ROMAO_X(SYMBOLS,  "SYM") \
 // ROMAO_X(SENTENCE_CASE,  "CASE") \
@@ -90,11 +90,11 @@ ROMAO_X(CAPSLINE,  "CASE") \
 &mc_qu_c,            &mt LGUI RS(F),      &mt LGUI RS(C),      &mt LGUI RS(P),      &kp RS(V),           &kp RS(J),           &ht_magic_c LGUI 0,  &lt_comma SHORTS 0,  &th_dot 0 0,         &kp RS(H), \
                                           &trans,              &trans,              &trans,              &lt_case_a2 SYM 0,   &lt_cancel MEDIA 0,  &trans
 
-// #define ROMAO_LAYER_ALPHA2 \
-// &none,               &kp Q,               &mc_qu,              &kp K,               &none,               &none,               &ac_ocir,            &ac_oacu,            &ac_uacu,            &none, \
-// &kp Y,               &kp Z,               &kp X,               &kp W,               &none,               &none,               &ac_atil,            &ac_aacu,            &ac_eacu,            &ac_iacu, \
-// &none,               &kp J,               &mc_ced,             &reversed_magic,     &none,               &none,               &ac_otil,            &ac_acir,            &ac_ecir,            &none, \
-//                                           &none,               &mc_sqo,             &trans,              &kp SPACE,           &mc_sqo,             &none
+#define ROMAO_LAYER_ALPHA2 \
+&none,               &kp Q,               &mc_qu,              &kp K,               &none,               &none,               &ac_ocir,            &ac_oacu,            &ac_uacu,            &none, \
+&kp Y,               &kp Z,               &kp X,               &kp W,               &none,               &none,               &ac_atil,            &ac_aacu,            &ac_eacu,            &ac_iacu, \
+&none,               &kp J,               &mc_ced,             &reversed_magic,     &none,               &none,               &ac_otil,            &ac_acir,            &ac_ecir,            &none, \
+                                          &none,               &mc_sqo,             &trans,              &kp SPACE,           &mc_sqo,             &none
 
 // #define ROMAO_LAYER_NUMBERS \
 // &none,               &th_lbrc 0 0,        &th_rbrc 0 0,        &kp BSLH,            &none,               &none,               &mc_n7,              &mc_n8,              &mc_n9,              &none, \
