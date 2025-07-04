@@ -17,7 +17,7 @@ ROMAO_X(ALPHA2,  "ROMAK") \
 ROMAO_X(NUMBERS,  "NUM") \
 ROMAO_X(SYMBOLS,  "SYM") \
 ROMAO_X(SENTENCE_CASE,  "CASE") \
-// ROMAO_X(CCEDIL,  "Ç EXT") \
+ROMAO_X(CCEDIL,  "Ç EXT") \
 // ROMAO_X(SHIFTED_ALPHA2,  "ROMAK") \
 // ROMAO_X(CASE_ALPHA2,  "CASE") \
 // ROMAO_X(CASE_CCEDIL,  "CASE") \
@@ -114,11 +114,11 @@ ROMAO_X(SENTENCE_CASE,  "CASE") \
 &mc_qu_s,            &mt LGUI LS(F),      &mt LGUI LS(C),      &mt LGUI LS(P),      &kp LS(V),           &kp LS(J),           &ht_magic_c LGUI 0,  &lt_comma SHORTS 0,  &th_dot 0 0,         &kp LS(H), \
                                           &trans,              &trans,              &trans,              &lt_sft_a2 SYM_CP 0, &trans,              &trans
 
-// #define ROMAO_LAYER_CCEDIL \
-// &none,               &none,               &none,               &none,               &none,               &none,               &none,               &trans,              &trans,              &none, \
-// &none,               &none,               &none,               &mc_aotil,           &none,               &none,               &ac_atil,            &trans,              &none,               &none, \
-// &none,               &none,               &none,               &mc_otiles,          &none,               &none,               &ac_otil,            &trans,              &trans,              &none, \
-//                                           &none,               &sl ALPHA2,          &trans,              &trans,              &trans,              &none
+#define ROMAO_LAYER_CCEDIL \
+&none,               &none,               &none,               &none,               &none,               &none,               &none,               &trans,              &trans,              &none, \
+&none,               &none,               &none,               &mc_aotil,           &none,               &none,               &ac_atil,            &trans,              &none,               &none, \
+&none,               &none,               &none,               &mc_otiles,          &none,               &none,               &ac_otil,            &trans,              &trans,              &none, \
+                                          &none,               &sl ALPHA2,          &trans,              &trans,              &trans,              &none
 
 // #define ROMAO_LAYER_SHIFTED_ALPHA2 \
 // &none,               &kp LS(Q),           &mc_qu_s,            &kp LS(K),           &none,               &none,               &ac_ocir_s,          &ac_oacu_s,          &ac_uacu_s,          &none, \
