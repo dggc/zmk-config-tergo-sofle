@@ -30,7 +30,7 @@
 
 #include "../features/sentence.dtsi"
 // #include "../features/smart.dtsi"
-#include "../features/adaptive.dtsi"
+// #include "../features/adaptive.dtsi"
 #include "../features/symbols.dtsi"
 
 // #include "../features/combos.dtsi"
