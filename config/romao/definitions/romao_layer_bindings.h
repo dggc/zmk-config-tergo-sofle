@@ -31,7 +31,7 @@ ROMAO_X(NAVIGATION,  "NAV") \
 ROMAO_X(NUMBERS_COPY,  "NUM") \
 ROMAO_X(SYMBOLS_COPY,  "SYM") \
 ROMAO_X(MEDIA,  "MOUSE") \
-// ROMAO_X(NAVIGATION_COPY,  "NAV") \
+ROMAO_X(NAVIGATION_COPY,  "NAV") \
 // ROMAO_X(TEXT,  "TEXT") \
 // ROMAO_X(FUNCTIONS,  "FUN") \
 // ROMAO_X(SMART,  "SMART")
@@ -198,11 +198,11 @@ ROMAO_X(MEDIA,  "MOUSE") \
 &none,               &msc SCRL_DOWN,      &mmv MOVE_DOWN,      &msc SCRL_UP,        &none,               &none,               &kp C_PP,            &kp C_PREV,          &kp C_NEXT,          &none, \
                                           &none,               &mo NAV_CP,          &kp SPACE,           &none,               &trans,              &none
 
-// #define ROMAO_LAYER_NAVIGATION_COPY \
-// &none,               &mc_swapper,         &mc_tabs,            &mc_launcher,        &none,               &none,               &kp TAB,             &kp ENTER,           &kp ESC,             &none, \
-// &kp INS,             &kp LCTL,            &kp LALT,            &kp LSFT,            &none,               &none,               &kp LEFT,            &kp DOWN,            &kp UP,              &kp RIGHT, \
-// &none,               &kp LGUI,            &kp LGUI,            &kp LGUI,            &none,               &none,               &kp DEL,             &kp HOME,            &kp END,             &none, \
-//                                           &none,               &trans,              &trans,              &trans,              &trans,              &none
+#define ROMAO_LAYER_NAVIGATION_COPY \
+&none,               &mc_swapper,         &mc_tabs,            &mc_launcher,        &none,               &none,               &kp TAB,             &kp ENTER,           &kp ESC,             &none, \
+&kp INS,             &kp LCTL,            &kp LALT,            &kp LSFT,            &none,               &none,               &kp LEFT,            &kp DOWN,            &kp UP,              &kp RIGHT, \
+&none,               &kp LGUI,            &kp LGUI,            &kp LGUI,            &none,               &none,               &kp DEL,             &kp HOME,            &kp END,             &none, \
+                                          &none,               &trans,              &trans,              &trans,              &trans,              &none
 
 // #define ROMAO_LAYER_TEXT \
 // &none,               &select_home,        &select_word,        &select_line,        &trans,              &trans,              &kp TAB,             &kp ENTER,           &kp ESC,             &none, \
