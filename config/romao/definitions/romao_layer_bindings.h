@@ -26,7 +26,7 @@ ROMAO_X(MEHS,  "MEHS") \
 ROMAO_X(PLAIN1,  "PLAIN") \
 ROMAO_X(PLAIN2,  "PLAIN") \
 ROMAO_X(SHIFTED_PLAIN2,  "PLAIN") \
-// ROMAO_X(SECONDARY_ALTERNATE_REPEAT,  "ROMAK") \
+ROMAO_X(SECONDARY_ALTERNATE_REPEAT,  "ROMAK") \
 // ROMAO_X(NAVIGATION,  "NAV") \
 // ROMAO_X(NUMBERS_COPY,  "NUM") \
 // ROMAO_X(SYMBOLS_COPY,  "SYM") \
@@ -168,11 +168,11 @@ ROMAO_X(SHIFTED_PLAIN2,  "PLAIN") \
 &none,               &kp LS(J),           &mc_ced_s,           &kp LS(V),           &none,               &none,               &ac_otil_s,          &ac_acir_s,          &ac_ecir_s,          &none, \
                                           &none,               &mc_sqo,             &lt NUM_CP SPACE,    &lt SYM_CP SPACE,    &mc_sqo,             &none
 
-// #define ROMAO_LAYER_SECONDARY_ALTERNATE_REPEAT \
-// &trans,              &trans,              &trans,              &trans,              &trans,              &trans,              &trans,              &trans,              &trans,              &trans, \
-// &trans,              &trans,              &trans,              &trans,              &trans,              &trans,              &trans,              &trans,              &trans,              &trans, \
-// &trans,              &trans,              &trans,              &trans,              &trans,              &trans,              &trans,              &trans,              &trans,              &trans, \
-//                                           &trans,              &a2_alt_repeat,      &trans,              &trans,              &trans,              &trans
+#define ROMAO_LAYER_SECONDARY_ALTERNATE_REPEAT \
+&trans,              &trans,              &trans,              &trans,              &trans,              &trans,              &trans,              &trans,              &trans,              &trans, \
+&trans,              &trans,              &trans,              &trans,              &trans,              &trans,              &trans,              &trans,              &trans,              &trans, \
+&trans,              &trans,              &trans,              &trans,              &trans,              &trans,              &trans,              &trans,              &trans,              &trans, \
+                                          &trans,              &a2_alt_repeat,      &trans,              &trans,              &trans,              &trans
 
 // #define ROMAO_LAYER_NAVIGATION \
 // &none,               &mc_swapper,         &mc_tabs,            &mc_launcher,        &none,               &none,               &kp TAB,             &kp ENTER,           &kp ESC,             &none, \
