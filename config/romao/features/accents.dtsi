@@ -7,7 +7,7 @@
 
 / {
     accents {
-        // ACCENT(ac_agrv, A, GRAVE)
+        ACCENT(ac_agrv, A, GRAVE)
         ACCENT(ac_aacu, A, SQT  )
         ACCENT(ac_atil, A, TILDE)
         ACCENT(ac_acir, A, CARET)

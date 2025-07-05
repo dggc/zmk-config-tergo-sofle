@@ -8,7 +8,7 @@
 / {
     adaptive_keys {
         
-        // // // ******************** REPEAT KEY ******************** //
+        // ******************** REPEAT KEY ******************** //
 
         alternate_repeat_key: alternate_repeat_key {
             compatible = "zmk,behavior-adaptive-key";

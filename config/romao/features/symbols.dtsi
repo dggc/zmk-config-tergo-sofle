@@ -9,14 +9,14 @@
     symbols {
         // Base
 
-        // SHIFT_MORPH(mm_semi,          &kp SEMI, &kp COLON)
-        // MACRO(mc_end_semi,            &kp END &kp SEMI)
-        // TAPHOLD_TP(th_semi,           &mm_semi, &mc_end_semi)
+        SHIFT_MORPH(mm_semi,          &kp SEMI, &kp COLON)
+        MACRO(mc_end_semi,            &kp END &kp SEMI)
+        TAPHOLD_TP(th_semi,           &mm_semi, &mc_end_semi)
 
-        // MACRO(mc_end_semi_ent,        &kp END &kp SEMI &kp ENTER)
+        MACRO(mc_end_semi_ent,        &kp END &kp SEMI &kp ENTER)
 
-        // MACRO(mc_h,                   &kp H)
-        // TAPHOLD_TP(th_hyper_h,        &mc_h, &mc_hyper)
+        MACRO(mc_h,                   &kp H)
+        TAPHOLD_TP(th_hyper_h,        &mc_h, &mc_hyper)
 
         MACRO(mc_comma,               &kp COMMA)
         MACRO(mc_comma_spc,           &kp COMMA &kp SPACE)
@@ -27,7 +27,7 @@
         MACRO(mc_end_dot,             &kp END &kp DOT )
         TAPHOLD_TP(th_dot,            &mm_dot_meh, &mc_end_dot)
 
-        // // Numbers
+        // Numbers
 
         SHIFT_MEH(mc_n0,              &kp N0, &kp KP_N0)
         SHIFT_MEH(mc_n1,              &kp N1, &kp KP_N1)
@@ -57,13 +57,13 @@
         MACRO(mc_tilde,               &kp TILDE &kp SPACE)
         LAYERTAP_TP(lt_tilde,         &mc_tilde)
 
-        // MACRO(mc_and,                 &kp AMPS &kp AMPS)
-        // MACRO(mc_right_and,           &kp RIGHT &kp AMPS &kp AMPS)
-        // TAPHOLD_TP(th_and,            &mc_and, &mc_right_and)
+        MACRO(mc_and,                 &kp AMPS &kp AMPS)
+        MACRO(mc_right_and,           &kp RIGHT &kp AMPS &kp AMPS)
+        TAPHOLD_TP(th_and,            &mc_and, &mc_right_and)
 
-        // MACRO(mc_or,                  &kp PIPE &kp PIPE)
-        // MACRO(mc_right_or,            &kp RIGHT &kp PIPE &kp PIPE)
-        // TAPHOLD_TP(th_or,             &mc_or, &mc_right_or)
+        MACRO(mc_or,                  &kp PIPE &kp PIPE)
+        MACRO(mc_right_or,            &kp RIGHT &kp PIPE &kp PIPE)
+        TAPHOLD_TP(th_or,             &mc_or, &mc_right_or)
 
         MACRO(mc_rpar,                &kp RPAR)
         MACRO(mc_end_rpar,            &kp END &kp RPAR)
@@ -93,49 +93,49 @@
         MACRO(mc_end_lbrc,            &kp END &kp LBRC)
         TAPHOLD_TP(th_lbrc,           &mc_lbrc, &mc_end_lbrc)
 
-        // MACRO(mc_pars,                &kp LPAR &kp RPAR)
-        // MACRO(mc_end_pars,            &kp END &kp LPAR &kp RPAR)
-        // TAPHOLD_TP(th_pars,           &mc_pars, &mc_end_pars)
+        MACRO(mc_pars,                &kp LPAR &kp RPAR)
+        MACRO(mc_end_pars,            &kp END &kp LPAR &kp RPAR)
+        TAPHOLD_TP(th_pars,           &mc_pars, &mc_end_pars)
 
-        // MACRO(mc_brackets,            &kp LBKT &kp RBKT)
-        // LAYERTAP_TP(lt_brackets,      &mc_brackets)
+        MACRO(mc_brackets,            &kp LBKT &kp RBKT)
+        LAYERTAP_TP(lt_brackets,      &mc_brackets)
 
         MACRO(mc_deg,                 &kp LS(LA(N8)))
         LAYERTAP_TP(lt_deg,           &mc_deg)
 
-        // // Symbols
+        // Symbols
 
-        // MACRO(mc_us,                  &kp LS(U) &kp LS(S) &kp DOLLAR)
-        // MACRO(mc_usd,                 &kp LS(U) &kp LS(S) &kp LS(D))
-        // TAPHOLD_TP(th_us,             &mc_us, &mc_usd)
-        // MACRO(mc_br,                  &kp LS(R) &kp DOLLAR)
-        // MACRO(mc_brl,                 &kp LS(B) &kp LS(R) &kp LS(L))
-        // TAPHOLD_TP(th_br,             &mc_br, &mc_brl)
-        // MACRO(mc_euro,                &kp LS(LA(N2)))
-        // MACRO(mc_eur,                 &kp LS(E) &kp LS(U) &kp LS(R))
-        // TAPHOLD_TP(th_eur,            &mc_euro, &mc_eur)
+        MACRO(mc_us,                  &kp LS(U) &kp LS(S) &kp DOLLAR)
+        MACRO(mc_usd,                 &kp LS(U) &kp LS(S) &kp LS(D))
+        TAPHOLD_TP(th_us,             &mc_us, &mc_usd)
+        MACRO(mc_br,                  &kp LS(R) &kp DOLLAR)
+        MACRO(mc_brl,                 &kp LS(B) &kp LS(R) &kp LS(L))
+        TAPHOLD_TP(th_br,             &mc_br, &mc_brl)
+        MACRO(mc_euro,                &kp LS(LA(N2)))
+        MACRO(mc_eur,                 &kp LS(E) &kp LS(U) &kp LS(R))
+        TAPHOLD_TP(th_eur,            &mc_euro, &mc_eur)
 
-        // MACRO(mc_pars_semi_ent,       &kp END &kp LPAR &kp RPAR &kp SEMI &kp ENTER)
+        MACRO(mc_pars_semi_ent,       &kp END &kp LPAR &kp RPAR &kp SEMI &kp ENTER)
 
-        // MACRO(mc_dhash,               &kp HASH &kp HASH)
-        // MACRO(mc_thash,               &kp HASH &kp HASH &kp HASH)
-        // MACRO(mc_tdqo,                &mc_dqo &mc_dqo &mc_dqo)
-        // MACRO(mc_tdqo_ent,            &mc_tdqo &kp ENTER)
-        // TAPHOLD_TP(th_tdqo,           &mc_tdqo, &mc_tdqo_ent)
+        MACRO(mc_dhash,               &kp HASH &kp HASH)
+        MACRO(mc_thash,               &kp HASH &kp HASH &kp HASH)
+        MACRO(mc_tdqo,                &mc_dqo &mc_dqo &mc_dqo)
+        MACRO(mc_tdqo_ent,            &mc_tdqo &kp ENTER)
+        TAPHOLD_TP(th_tdqo,           &mc_tdqo, &mc_tdqo_ent)
 
-        // MACRO(mc_tbti,                &mc_bti &mc_bti &mc_bti)
-        // MACRO(mc_tbti_ent,            &mc_tbti &kp ENTER)
-        // TAPHOLD_TP(th_tbti,           &mc_tbti, &mc_tbti_ent)
-        // MACRO(mc_dsqo,                &mc_sqo &mc_sqo &kp LEFT)
-        // MACRO(mc_ddqo,                &mc_dqo &mc_dqo &kp LEFT)
-        // MACRO(mc_dbti,                &mc_bti &mc_bti &kp LEFT)
+        MACRO(mc_tbti,                &mc_bti &mc_bti &mc_bti)
+        MACRO(mc_tbti_ent,            &mc_tbti &kp ENTER)
+        TAPHOLD_TP(th_tbti,           &mc_tbti, &mc_tbti_ent)
+        MACRO(mc_dsqo,                &mc_sqo &mc_sqo &kp LEFT)
+        MACRO(mc_ddqo,                &mc_dqo &mc_dqo &kp LEFT)
+        MACRO(mc_dbti,                &mc_bti &mc_bti &kp LEFT)
 
-        // MACRO(mc_braces_new,          &kp END &kp LBRC &kp ENTER)
-        // MACRO(mc_sarrow,              &kp MINUS &kp GT)
-        // MACRO(mc_darrow,              &kp EQUAL &kp GT)
-        // MACRO(mc_dcolon,              &kp COLON &kp COLON)
-        // MACRO(mc_end_dcolon,          &kp END &kp COLON &kp COLON)
-        // TAPHOLD_TP(th_dcolon,         &mc_dcolon, &mc_end_dcolon)
+        MACRO(mc_braces_new,          &kp END &kp LBRC &kp ENTER)
+        MACRO(mc_sarrow,              &kp MINUS &kp GT)
+        MACRO(mc_darrow,              &kp EQUAL &kp GT)
+        MACRO(mc_dcolon,              &kp COLON &kp COLON)
+        MACRO(mc_end_dcolon,          &kp END &kp COLON &kp COLON)
+        TAPHOLD_TP(th_dcolon,         &mc_dcolon, &mc_end_dcolon)
 
         MACRO(mc_perc,                &kp PERCENT)
         MACRO(mc_end_perc,            &kp END &kp PERCENT)
@@ -157,19 +157,19 @@
         TAPHOLD_TP(th_eql,            &mc_eql, &mc_end_eql)
         MACRO(mc_eqeq,                &kp EQUAL &kp EQUAL)
 
-        // MACRO(mc_noteq,               &kp EXCL &kp EQUAL)
+        MACRO(mc_noteq,               &kp EXCL &kp EQUAL)
 
-        // MACRO(mc_tisl,                &kp TILDE &kp SPACE &kp SLASH)
-        // MACRO(mc_dds,                 &kp DOT &kp DOT &kp SLASH)
-        // MACRO(mc_ds,                  &kp DOT &kp SLASH)
+        MACRO(mc_tisl,                &kp TILDE &kp SPACE &kp SLASH)
+        MACRO(mc_dds,                 &kp DOT &kp DOT &kp SLASH)
+        MACRO(mc_ds,                  &kp DOT &kp SLASH)
 
-        // MACRO(mc_ord_o,               &kp LA(N0))
-        // MACRO(mc_ord_a,               &kp LA(N9))
-        // TAPHOLD_TP(th_ord_o,          &mc_ord_o, &mc_meh)
-        // TAPHOLD_TP(th_ord_a,          &mc_ord_a, &mc_hyper)
+        MACRO(mc_ord_o,               &kp LA(N0))
+        MACRO(mc_ord_a,               &kp LA(N9))
+        TAPHOLD_TP(th_ord_o,          &mc_ord_o, &mc_meh)
+        TAPHOLD_TP(th_ord_a,          &mc_ord_a, &mc_hyper)
 
-        // MACRO(mc_qr,                  &kp Q &kp R)
-        // MACRO(mc_atr,                 &kp AT &kp R)
-        // MACRO(mc_atat,                &kp AT &kp AT)
+        MACRO(mc_qr,                  &kp Q &kp R)
+        MACRO(mc_atr,                 &kp AT &kp R)
+        MACRO(mc_atat,                &kp AT &kp AT)
     };
 };
