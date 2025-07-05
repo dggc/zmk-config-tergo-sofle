@@ -34,7 +34,7 @@ ROMAO_X(MEDIA,  "MOUSE") \
 ROMAO_X(NAVIGATION_COPY,  "NAV") \
 ROMAO_X(TEXT,  "TEXT") \
 ROMAO_X(FUNCTIONS,  "FUN") \
-// ROMAO_X(SMART,  "SMART")
+ROMAO_X(SMART,  "SMART")
 
 #define ROMAO_LAYER_DEFAULT \
 &kp Q,               &kp B,               &kp M,               &kp G,               &kp K,               &kp X,               &kp L,               &kp O,               &kp U,               &kp Y, \
@@ -216,8 +216,8 @@ ROMAO_X(FUNCTIONS,  "FUN") \
 &none,               &hsk RGUI LGUI,      &hsk RGUI LGUI,      &hsk RGUI LGUI,      &none,               &none,               &kp F1,              &kp F2,              &kp F3,              &none, \
                                           &none,               &bootloader,         &none,               &none,               &key_repeat,         &none
 
-// #define ROMAO_LAYER_SMART \
-// &none,               &none,               &tc_smart_word,      &tc_smart_line,      &none,               &none,               &mc_vim_replace,     &mc_o_esc,           &mc_sft_o_esc,       &none, \
-// &none,               &tc_snake_case,      &tc_constant_case,   &tc_kebab_case,      &none,               &none,               &kp LS(V),           &kp V,               &kp LC(V),           &none, \
-// &none,               &tc_slash_case,      &tc_pascal_case,     &tc_camel_case,      &none,               &none,               &mc_dqt0p,           &mc_dqtplusp,        &mc_dqtplusy,        &none, \
-//                                           &none,               &key_repeat,         &mc_spc_esc,         &none,               &bootloader,         &none
+#define ROMAO_LAYER_SMART \
+&none,               &none,               &tc_smart_word,      &tc_smart_line,      &none,               &none,               &mc_vim_replace,     &mc_o_esc,           &mc_sft_o_esc,       &none, \
+&none,               &tc_snake_case,      &tc_constant_case,   &tc_kebab_case,      &none,               &none,               &kp LS(V),           &kp V,               &kp LC(V),           &none, \
+&none,               &tc_slash_case,      &tc_pascal_case,     &tc_camel_case,      &none,               &none,               &mc_dqt0p,           &mc_dqtplusp,        &mc_dqtplusy,        &none, \
+                                          &none,               &key_repeat,         &mc_spc_esc,         &none,               &bootloader,         &none
