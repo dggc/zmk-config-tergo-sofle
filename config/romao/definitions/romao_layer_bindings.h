@@ -30,7 +30,7 @@ ROMAO_X(SECONDARY_ALTERNATE_REPEAT,  "ROMAK") \
 ROMAO_X(NAVIGATION,  "NAV") \
 ROMAO_X(NUMBERS_COPY,  "NUM") \
 ROMAO_X(SYMBOLS_COPY,  "SYM") \
-// ROMAO_X(MEDIA,  "MOUSE") \
+ROMAO_X(MEDIA,  "MOUSE") \
 // ROMAO_X(NAVIGATION_COPY,  "NAV") \
 // ROMAO_X(TEXT,  "TEXT") \
 // ROMAO_X(FUNCTIONS,  "FUN") \
@@ -192,11 +192,11 @@ ROMAO_X(SYMBOLS_COPY,  "SYM") \
 &none,               &mc_lt,              &mc_gt,              &th_bti 0 0,         &none,               &none,               &th_excl 0 0,        &kp SLASH,           &kp STAR,            &none, \
                                           &none,               &trans,              &kp SPACE,           &kp SPACE,           &trans,              &none
 
-// #define ROMAO_LAYER_MEDIA \
-// &none,               &none,               &mkp LCLK,           &mkp RCLK,           &none,               &none,               &mc_hand,            &kp ENTER,           &kp ESC,             &none, \
-// &none,               &mmv MOVE_LEFT,      &mmv MOVE_UP,        &mmv MOVE_RIGHT,     &none,               &none,               &mc_mic,             &mt C_MUTE C_VOL_DN, &kp C_VOL_UP,        &lt_cam TEXT 0, \
-// &none,               &msc SCRL_DOWN,      &mmv MOVE_DOWN,      &msc SCRL_UP,        &none,               &none,               &kp C_PP,            &kp C_PREV,          &kp C_NEXT,          &none, \
-//                                           &none,               &mo NAV_CP,          &kp SPACE,           &none,               &trans,              &none
+#define ROMAO_LAYER_MEDIA \
+&none,               &none,               &mkp LCLK,           &mkp RCLK,           &none,               &none,               &mc_hand,            &kp ENTER,           &kp ESC,             &none, \
+&none,               &mmv MOVE_LEFT,      &mmv MOVE_UP,        &mmv MOVE_RIGHT,     &none,               &none,               &mc_mic,             &mt C_MUTE C_VOL_DN, &kp C_VOL_UP,        &lt_cam TEXT 0, \
+&none,               &msc SCRL_DOWN,      &mmv MOVE_DOWN,      &msc SCRL_UP,        &none,               &none,               &kp C_PP,            &kp C_PREV,          &kp C_NEXT,          &none, \
+                                          &none,               &mo NAV_CP,          &kp SPACE,           &none,               &trans,              &none
 
 // #define ROMAO_LAYER_NAVIGATION_COPY \
 // &none,               &mc_swapper,         &mc_tabs,            &mc_launcher,        &none,               &none,               &kp TAB,             &kp ENTER,           &kp ESC,             &none, \
