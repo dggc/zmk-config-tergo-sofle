@@ -46,7 +46,7 @@
         MACRO(mc_meh_d,                  &macro_tap &kp LC(LA(LS(D))))
         MACRO(mc_meh_i,                  &macro_tap &kp LC(LA(LS(I))))
 
-        // LAYERTAP_TP(lt_plain1,           &tc_smart_plain1)
+        LAYERTAP_TP(lt_plain1,           &tc_smart_plain1)
 
         // // Navigation
 

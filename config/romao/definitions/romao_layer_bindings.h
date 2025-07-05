@@ -22,7 +22,7 @@ ROMAO_X(SHIFTED_ALPHA2,  "ROMAK") \
 ROMAO_X(CASE_ALPHA2,  "CASE") \
 ROMAO_X(CASE_CCEDIL,  "CASE") \
 ROMAO_X(SHORTCUTS,  "SHORTS") \
-// ROMAO_X(MEHS,  "MEHS") \
+ROMAO_X(MEHS,  "MEHS") \
 // ROMAO_X(PLAIN1,  "PLAIN") \
 // ROMAO_X(PLAIN2,  "PLAIN") \
 // ROMAO_X(SHIFTED_PLAIN2,  "PLAIN") \
@@ -144,11 +144,11 @@ ROMAO_X(SHORTCUTS,  "SHORTS") \
 &none,               &mc_close,           &mc_refresh,         &mc_reopen,          &none,               &none,               &leader,             &to FUN,             &to MEHS,            &none, \
                                           &none,               &ht_repeat TEXT 0,   &lt_comma_spc FUN 0, &lt SMART SPACE,     &ht_repeat TEXT 0,   &none
 
-// #define ROMAO_LAYER_MEHS \
-// &none,               &mc_meh_b,           &mc_meh_m,           &mc_meh_g,           &none,               &none,               &mc_meh_l,           &mc_meh_o,           &mc_meh_u,           &none, \
-// &mc_meh_d,           &mc_meh_n,           &mc_meh_s,           &mc_meh_t,           &none,               &none,               &mc_meh_r,           &mc_meh_a,           &mc_meh_e,           &mc_meh_i, \
-// &none,               &mt_meh_f LGUI 0,    &mt_meh_c LGUI 0,    &mt_meh_p LGUI 0,    &none,               &none,               &mt_meh_h LGUI 0,    &mt_meh_comm LGUI 0, &mt_meh_dot LGUI 0,  &none, \
-//                                           &none,               &lt_plain1 NAV 0,    &hsk LGUI LGUI,      &hsk LGUI LGUI,      &lt_plain1 NAV 0,    &none
+#define ROMAO_LAYER_MEHS \
+&none,               &mc_meh_b,           &mc_meh_m,           &mc_meh_g,           &none,               &none,               &mc_meh_l,           &mc_meh_o,           &mc_meh_u,           &none, \
+&mc_meh_d,           &mc_meh_n,           &mc_meh_s,           &mc_meh_t,           &none,               &none,               &mc_meh_r,           &mc_meh_a,           &mc_meh_e,           &mc_meh_i, \
+&none,               &mt_meh_f LGUI 0,    &mt_meh_c LGUI 0,    &mt_meh_p LGUI 0,    &none,               &none,               &mt_meh_h LGUI 0,    &mt_meh_comm LGUI 0, &mt_meh_dot LGUI 0,  &none, \
+                                          &none,               &lt_plain1 NAV 0,    &hsk LGUI LGUI,      &hsk LGUI LGUI,      &lt_plain1 NAV 0,    &none
 
 // #define ROMAO_LAYER_PLAIN1 \
 // &kp Q,               &kp B,               &kp M,               &kp G,               &kp K,               &kp X,               &kp L,               &kp O,               &kp U,               &kp Y, \

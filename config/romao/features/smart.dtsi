@@ -19,17 +19,17 @@
         };
         LAYERTAP_TP(lt_cancel,     &tc_cancel)
 
-        // // ********************** SMART PLAIN ALPHAS ********************** //
+        // ********************** SMART PLAIN ALPHAS ********************** //
 
-        // smart_plain1: smart_plain1 {
-        //     compatible = "zmk,behavior-auto-layer";
-        //     ignore-alphas;
-        //     ignore-modifiers;
-		// 	#binding-cells = <1>;
-        //     continue-list = <UNDERSCORE MINUS BACKSPACE DELETE SQT TILDE CARET GRAVE SPACE>;
-        // };
+        smart_plain1: smart_plain1 {
+            compatible = "zmk,behavior-auto-layer";
+            ignore-alphas;
+            ignore-modifiers;
+			#binding-cells = <1>;
+            continue-list = <UNDERSCORE MINUS BACKSPACE DELETE SQT TILDE CARET GRAVE SPACE>;
+        };
 
-        // MACRO(tc_smart_plain1, &smart_plain1 PLAIN1)
+        MACRO(tc_smart_plain1, &smart_plain1 PLAIN1)
 
         // MACRO(mc_plain2, &sl PLAIN2)
         // MACRO(mc_shifted_plain2, &sl SFT_PLAIN2)
