@@ -21,7 +21,7 @@ ROMAO_X(CCEDIL,  "Ç EXT") \
 ROMAO_X(SHIFTED_ALPHA2,  "ROMAK") \
 ROMAO_X(CASE_ALPHA2,  "CASE") \
 ROMAO_X(CASE_CCEDIL,  "CASE") \
-// ROMAO_X(SHORTCUTS,  "SHORTS") \
+ROMAO_X(SHORTCUTS,  "SHORTS") \
 // ROMAO_X(MEHS,  "MEHS") \
 // ROMAO_X(PLAIN1,  "PLAIN") \
 // ROMAO_X(PLAIN2,  "PLAIN") \
@@ -138,11 +138,11 @@ ROMAO_X(CASE_CCEDIL,  "CASE") \
 &none,               &none,               &none,               &mc_otiles_c,        &none,               &none,               &ac_otil_c,          &trans,              &trans,              &none, \
                                           &none,               &sl CASE_A2,         &trans,              &trans,              &trans,              &none
 
-// #define ROMAO_LAYER_SHORTCUTS \
-// &none,               &mc_emoji,           &mc_files,           &mc_screenshot,      &none,               &none,               &kp C_SLEEP,         &to NUM,             &to PLAIN1,          &none, \
-// &none,               &mc_zoom_out,        &mc_zoom_in,         &mc_reset_zoom,      &none,               &none,               &mc_lock,            &to NAV,             &to MEDIA,           &none, \
-// &none,               &mc_close,           &mc_refresh,         &mc_reopen,          &none,               &none,               &leader,             &to FUN,             &to MEHS,            &none, \
-//                                           &none,               &ht_repeat TEXT 0,   &lt_comma_spc FUN 0, &lt SMART SPACE,     &ht_repeat TEXT 0,   &none
+#define ROMAO_LAYER_SHORTCUTS \
+&none,               &mc_emoji,           &mc_files,           &mc_screenshot,      &none,               &none,               &kp C_SLEEP,         &to NUM,             &to PLAIN1,          &none, \
+&none,               &mc_zoom_out,        &mc_zoom_in,         &mc_reset_zoom,      &none,               &none,               &mc_lock,            &to NAV,             &to MEDIA,           &none, \
+&none,               &mc_close,           &mc_refresh,         &mc_reopen,          &none,               &none,               &leader,             &to FUN,             &to MEHS,            &none, \
+                                          &none,               &ht_repeat TEXT 0,   &lt_comma_spc FUN 0, &lt SMART SPACE,     &ht_repeat TEXT 0,   &none
 
 // #define ROMAO_LAYER_MEHS \
 // &none,               &mc_meh_b,           &mc_meh_m,           &mc_meh_g,           &none,               &none,               &mc_meh_l,           &mc_meh_o,           &mc_meh_u,           &none, \

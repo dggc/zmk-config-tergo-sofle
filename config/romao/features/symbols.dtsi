@@ -19,7 +19,7 @@
         // TAPHOLD_TP(th_hyper_h,        &mc_h, &mc_hyper)
 
         MACRO(mc_comma,               &kp COMMA)
-        // MACRO(mc_comma_spc,           &kp COMMA &kp SPACE)
+        MACRO(mc_comma_spc,           &kp COMMA &kp SPACE)
         LAYERTAP_HP(lt_comma,         &mm_comma_meh)
         // LAYERTAP_TP(lt_comma_spc,     &mc_comma_spc)
 
