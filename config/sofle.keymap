@@ -66,6 +66,10 @@
     flavor = "balanced"; // Pode ser "balanced", "hold-preferred" ou "tap-preferred"
 };
 
+&sk {
+    quick-release;
+};
+
 &caps_word {
     continue-list = <UNDERSCORE MINUS>;
 };
@@ -89,12 +93,33 @@
     };
 };
 
+#define KEYS_L LT0 LT1 LT2 LT3 LT4 LM0 LM1 LM2 LM3 LM4 LB0 LB1 LB2 LB3 LB4  // left hand
+#define KEYS_R RT0 RT1 RT2 RT3 RT4 RM0 RM1 RM2 RM3 RM4 RB0 RB1 RB2 RB3 RB4  // right hand
+#define THUMBS LH1 LH0 RH0 RH1    
+ZMK_HOLD_TAP(hml,
+    flavor = "balanced";
+    tapping-term-ms = <280>;
+    require-prior-idle-ms = <100>;
+    hold-trigger-key-positions = <KEYS_R THUMBS>;
+    hold-trigger-on-release;
+    bindings = <&kp>, <&kp>;
+)
+ZMK_HOLD_TAP(hmr,
+    flavor = "balanced";
+    tapping-term-ms = <280>;
+    require-prior-idle-ms = <100>;
+    hold-trigger-key-positions = <KEYS_L THUMBS>;
+    hold-trigger-on-release;
+    bindings = <&kp>, <&kp>;
+)
+#define HML(MOD, TAP) &hml MOD TAP
+#define HMR(MOD, TAP) &hmr MOD TAP
 
 / {
     behaviors {
         rot_msc: sensor_rotate_msc {
             compatible = "zmk,behavior-sensor-rotate-var";
-	        tap-ms = <20>;
+	    tap-ms = <20>;
             #sensor-binding-cells = <2>;
             bindings = <&msc>, <&msc>;
         };
@@ -114,7 +139,6 @@ ZMK_LAYER(Base,
                                 &mo TNUMPAD    &kp LGUI      &kp LALT      &kp SPACE      &mo TSYMB_NAV         &kp ENTER    &kp BSPC      &kp DEL       &kp RGUI      &kp RCTRL
 //                             ╰─────────────┴─────────────┴─────────────┴─────────────┴─────────────╯      ╰─────────────┴─────────────┴─────────────┴─────────────┴─────────────╯
 , SENSORS)
-
 
 ZMK_LAYER(SymNv,
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮                                  ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
