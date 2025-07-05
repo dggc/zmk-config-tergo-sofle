@@ -13,17 +13,10 @@
 #include <dt-bindings/zmk/outputs.h>
 
 #define HOST_OS 1  //linux
-#define ZMK_HELPER_KEEP_NATIVE 1
 #include "zmk-helpers/helper.h"
 
 // Source desired key-position labels
 #include "zmk-helpers/key-labels/sofle.h"
-
-// Source unicode-chars for desired languages
-#include "zmk-helpers/unicode-chars/portuguese.dtsi"
-
-#include <behaviors/num_word.dtsi>
-
 
 #define ___ &trans
 #define NA &none
@@ -72,16 +65,8 @@
     flavor = "balanced"; // Pode ser "balanced", "hold-preferred" ou "tap-preferred"
 };
 
-&sk {
-    quick-release;
-};
-
 &caps_word {
     continue-list = <UNDERSCORE MINUS>;
-};
-
-&num_word {
-  continue-list = <BSPC DEL DOT COMMA>;
 };
 
 // Combos do teclado
@@ -103,55 +88,18 @@
     };
 };
 
-#define KEYS_L LT0 LT1 LT2 LT3 LT4 LM0 LM1 LM2 LM3 LM4 LB0 LB1 LB2 LB3 LB4  // left hand
-#define KEYS_R RT0 RT1 RT2 RT3 RT4 RM0 RM1 RM2 RM3 RM4 RB0 RB1 RB2 RB3 RB4  // right hand
-#define THUMBS LH1 LH0 RH0 RH1    
-ZMK_HOLD_TAP(hml,
-    flavor = "balanced";
-    tapping-term-ms = <280>;
-    require-prior-idle-ms = <100>;
-    hold-trigger-key-positions = <KEYS_R THUMBS>;
-    hold-trigger-on-release;
-    bindings = <&kp>, <&kp>;
-)
-ZMK_HOLD_TAP(hmr,
-    flavor = "balanced";
-    tapping-term-ms = <280>;
-    require-prior-idle-ms = <100>;
-    hold-trigger-key-positions = <KEYS_L THUMBS>;
-    hold-trigger-on-release;
-    bindings = <&kp>, <&kp>;
-)
-#define HML(MOD, TAP) &hml MOD TAP
-#define HMR(MOD, TAP) &hmr MOD TAP
-
-// Sticy key mod tap
-ZMK_HOLD_TAP(sk_mt,
-    tapping-term-ms = <TAPPING_TERM>;
-    bindings = <&mo>, <&sk>;
-)
 
 / {
     behaviors {
-	hp_mt: hold_preferred_mod_tap {
-            compatible = "zmk,behavior-hold-tap";
-            tapping-term-ms = <TAPPING_TERM>;
-            quick-tap-ms = <TAPPING_TERM>;
-            flavor = "hold-preferred"; // Pode ser "balanced", "hold-preferred" ou "tap-preferred"
-            #binding-cells = <2>;
-            bindings = <&kp>, <&kp>;
-        };
-
         rot_msc: sensor_rotate_msc {
             compatible = "zmk,behavior-sensor-rotate-var";
-	    tap-ms = <20>;
+	        tap-ms = <20>;
             #sensor-binding-cells = <2>;
             bindings = <&msc>, <&msc>;
         };
     };
 };
 
-#ifdef USE_INTERNATIONAL_LAYOUT
 ZMK_LAYER(Base,
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮                                  ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
     &kp ESC       &kp N1        &kp N2        &kp N3        &kp N4        &kp N5                                           &kp N6        &kp N7        &kp N8        &kp N9        &kp N0        &kp MINUS
@@ -165,23 +113,8 @@ ZMK_LAYER(Base,
                                 &mo TNUMPAD    &kp LGUI      &kp LALT      &kp SPACE      &mo TSYMB_NAV         &kp ENTER    &kp BSPC      &kp DEL       &kp RGUI      &kp RCTRL
 //                             ╰─────────────┴─────────────┴─────────────┴─────────────┴─────────────╯      ╰─────────────┴─────────────┴─────────────┴─────────────┴─────────────╯
 , SENSORS)
-#else
-ZMK_LAYER(Base,
-// ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮                                  ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-    &kp ESC       &kp N1        &kp N2        &kp N3        &kp N4        &kp N5                                           &kp N6        &kp N7        &kp N8        &kp N9        &kp N0        &kp BSPC
-// ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤                                  ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-    &kp TAB       &kp Q         &kp W         &kp E         &kp R         &kp T                                            &kp Y         &kp U         &kp I         &kp O         &kp P         &kp BR_ACUT
-// ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤                                  ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-    &kp LSHFT     &kp A         &kp S         &kp D         &kp F         &kp G                                            &kp H         &kp J         &kp K         &kp L         &kp SEMI      &kp SQT
-// ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤╭─────────────╮    ╭─────────────╮├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-    &kp LCTRL     &kp Z         &kp X         &kp C         &kp V         &kp B          &mo TMEDIA           &mo TADJUST    &kp N         &kp M         &kp COMMA     &kp DOT       &kp FSLH      &kp BR_SLSH
-// ╰─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤╰─────────────╯    ╰─────────────╯├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────╯
-                                &mo TNUMPAD    &kp LGUI      &kp LALT      &kp SPACE      &mo TSYMB_NAV         &kp ENTER    &kp BSPC      &kp DEL       &kp RGUI      &kp RCTRL
-//                             ╰─────────────┴─────────────┴─────────────┴─────────────┴─────────────╯      ╰─────────────┴─────────────┴─────────────┴─────────────┴─────────────╯
-, SENSORS)
-#endif
 
-#ifdef USE_INTERNATIONAL_LAYOUT
+
 ZMK_LAYER(SymNv,
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮                                  ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
     ___           &kp F1        &kp F2        &kp F3        &kp F4        &kp F5                                           &kp F6        &kp F7        &kp F8        &kp F9        &kp F10       &kp F11
@@ -195,21 +128,6 @@ ZMK_LAYER(SymNv,
                                 ___           ___           ___           ___             ___                ___           ___           ___           ___           ___
 //                             ╰─────────────┴─────────────┴─────────────┴─────────────┴─────────────╯      ╰─────────────┴─────────────┴─────────────┴─────────────┴─────────────╯
 , SENSORS)
-#else
-ZMK_LAYER(SymNv,
-// ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮                                  ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-    ___           &kp F1        &kp F2        &kp F3        &kp F4        &kp F5                                           &kp F6        &kp F7        &kp F8        &kp F9        &kp F10       &kp F11
-// ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤                                  ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-    ___           &kp GRAVE     &kp LS(N6)    &kp KP_PLUS   &kp BR_LBKT   &kp BR_RBKT                                      &kp PG_UP     &kp HOME      &kp UP        &kp END       &kp INS       &kp F12
-// ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤                                  ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-    ___           &kp LS(GRAVE) &kp EQUAL     &kp KP_MINUS  &kp LS(N9)    &kp LS(N0)                                       &kp PG_DN     &kp LEFT      &kp DOWN      &kp RIGHT     &kp PSCRN     &caps_word
-// ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤╭─────────────╮    ╭─────────────╮├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-    ___           &kp NUBS      &kp LS(NUBS)  &kp LS(MINUS) &kp BR_LBCT   &kp BR_RBCT     ___                ___           &kp CAPS      &kp LC(LEFT)  &kp ESC       &kp LC(RIGHT) &kp PAUSE_BREAK NA
-// ╰─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤╰─────────────╯    ╰─────────────╯├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────╯
-                                ___           ___           ___           ___             ___                ___           ___           ___           ___           ___
-//                             ╰─────────────┴─────────────┴─────────────┴─────────────┴─────────────╯      ╰─────────────┴─────────────┴─────────────┴─────────────┴─────────────╯
-, SENSORS)
-#endif
 
 ZMK_LAYER(Confg,
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮                                  ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
