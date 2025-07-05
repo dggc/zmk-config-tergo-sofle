@@ -27,7 +27,7 @@ ROMAO_X(PLAIN1,  "PLAIN") \
 ROMAO_X(PLAIN2,  "PLAIN") \
 ROMAO_X(SHIFTED_PLAIN2,  "PLAIN") \
 ROMAO_X(SECONDARY_ALTERNATE_REPEAT,  "ROMAK") \
-// ROMAO_X(NAVIGATION,  "NAV") \
+ROMAO_X(NAVIGATION,  "NAV") \
 // ROMAO_X(NUMBERS_COPY,  "NUM") \
 // ROMAO_X(SYMBOLS_COPY,  "SYM") \
 // ROMAO_X(MEDIA,  "MOUSE") \
@@ -174,11 +174,11 @@ ROMAO_X(SECONDARY_ALTERNATE_REPEAT,  "ROMAK") \
 &trans,              &trans,              &trans,              &trans,              &trans,              &trans,              &trans,              &trans,              &trans,              &trans, \
                                           &trans,              &a2_alt_repeat,      &trans,              &trans,              &trans,              &trans
 
-// #define ROMAO_LAYER_NAVIGATION \
-// &none,               &mc_swapper,         &mc_tabs,            &mc_launcher,        &none,               &none,               &kp TAB,             &kp ENTER,           &kp ESC,             &none, \
-// &lt TEXT INS,        &kp LCTL,            &kp LALT,            &kp LSFT,            &none,               &none,               &kp LEFT,            &kp DOWN,            &kp UP,              &kp RIGHT, \
-// &none,               &kp LGUI,            &kp LGUI,            &kp LGUI,            &none,               &none,               &kp DEL,             &kp HOME,            &kp END,             &none, \
-//                                           &none,               &trans,              &none,               &hlt SYM_CP SPACE,   &mo MEDIA,           &none
+#define ROMAO_LAYER_NAVIGATION \
+&none,               &mc_swapper,         &mc_tabs,            &mc_launcher,        &none,               &none,               &kp TAB,             &kp ENTER,           &kp ESC,             &none, \
+&lt TEXT INS,        &kp LCTL,            &kp LALT,            &kp LSFT,            &none,               &none,               &kp LEFT,            &kp DOWN,            &kp UP,              &kp RIGHT, \
+&none,               &kp LGUI,            &kp LGUI,            &kp LGUI,            &none,               &none,               &kp DEL,             &kp HOME,            &kp END,             &none, \
+                                          &none,               &trans,              &none,               &hlt SYM_CP SPACE,   &mo MEDIA,           &none
 
 // #define ROMAO_LAYER_NUMBERS_COPY \
 // &none,               &th_lbrc 0 0,        &th_rbrc 0 0,        &kp BSLH,            &none,               &none,               &mc_n7,              &mc_n8,              &mc_n9,              &none, \

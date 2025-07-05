@@ -34,9 +34,9 @@
         MACRO(mc_zoom_in,                &macro_tap &kp LC(PLUS))
         MACRO(mc_reset_zoom,             &macro_tap &kp LC(N0))
 
-        // MACRO(mc_swapper,                &macro_tap &kp LA(TAB))
-        // MACRO(mc_launcher,               &macro_tap &kp LA(SPACE))
-        // MACRO(mc_tabs,                   &macro_tap &kp LC(LS(A)))
+        MACRO(mc_swapper,                &macro_tap &kp LA(TAB))
+        MACRO(mc_launcher,               &macro_tap &kp LA(SPACE))
+        MACRO(mc_tabs,                   &macro_tap &kp LC(LS(A)))
 
         MACRO(mc_files,                   &macro_tap &kp LG(E))
 
