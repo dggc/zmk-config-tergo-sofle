@@ -28,8 +28,8 @@ ROMAO_X(PLAIN2,  "PLAIN") \
 ROMAO_X(SHIFTED_PLAIN2,  "PLAIN") \
 ROMAO_X(SECONDARY_ALTERNATE_REPEAT,  "ROMAK") \
 ROMAO_X(NAVIGATION,  "NAV") \
-// ROMAO_X(NUMBERS_COPY,  "NUM") \
-// ROMAO_X(SYMBOLS_COPY,  "SYM") \
+ROMAO_X(NUMBERS_COPY,  "NUM") \
+ROMAO_X(SYMBOLS_COPY,  "SYM") \
 // ROMAO_X(MEDIA,  "MOUSE") \
 // ROMAO_X(NAVIGATION_COPY,  "NAV") \
 // ROMAO_X(TEXT,  "TEXT") \
@@ -180,17 +180,17 @@ ROMAO_X(NAVIGATION,  "NAV") \
 &none,               &kp LGUI,            &kp LGUI,            &kp LGUI,            &none,               &none,               &kp DEL,             &kp HOME,            &kp END,             &none, \
                                           &none,               &trans,              &none,               &hlt SYM_CP SPACE,   &mo MEDIA,           &none
 
-// #define ROMAO_LAYER_NUMBERS_COPY \
-// &none,               &th_lbrc 0 0,        &th_rbrc 0 0,        &kp BSLH,            &none,               &none,               &mc_n7,              &mc_n8,              &mc_n9,              &none, \
-// &mc_deg,             &th_lpar 0 0,        &th_rpar 0 0,        &kp AMPS,            &none,               &none,               &mc_n4,              &mc_n5,              &mc_n6,              &kp DOT, \
-// &none,               &th_lbkt 0 0,        &th_rbkt 0 0,        &kp PIPE,            &none,               &none,               &mc_n1,              &mc_n2,              &mc_n3,              &none, \
-//                                           &none,               &trans,              &trans,              &hlt SYM_CP SPACE,   &lt_n0 MEDIA 0,      &none
+#define ROMAO_LAYER_NUMBERS_COPY \
+&none,               &th_lbrc 0 0,        &th_rbrc 0 0,        &kp BSLH,            &none,               &none,               &mc_n7,              &mc_n8,              &mc_n9,              &none, \
+&mc_deg,             &th_lpar 0 0,        &th_rpar 0 0,        &kp AMPS,            &none,               &none,               &mc_n4,              &mc_n5,              &mc_n6,              &kp DOT, \
+&none,               &th_lbkt 0 0,        &th_rbkt 0 0,        &kp PIPE,            &none,               &none,               &mc_n1,              &mc_n2,              &mc_n3,              &none, \
+                                          &none,               &trans,              &trans,              &hlt SYM_CP SPACE,   &lt_n0 MEDIA 0,      &none
 
-// #define ROMAO_LAYER_SYMBOLS_COPY \
-// &none,               &mc_tilde,           &kp HASH,            &th_sqo 0 0,         &none,               &none,               &th_perc 0 0,        &th_eql 0 0,         &th_colon 0 0,       &none, \
-// &kp AT,              &th_caret_z 0 0,     &kp DOLLAR,          &th_dqo 0 0,         &none,               &none,               &th_qmark 0 0,       &kp MINUS,           &kp PLUS,            &kp STAR, \
-// &none,               &mc_lt,              &mc_gt,              &th_bti 0 0,         &none,               &none,               &th_excl 0 0,        &kp SLASH,           &kp STAR,            &none, \
-//                                           &none,               &trans,              &kp SPACE,           &kp SPACE,           &trans,              &none
+#define ROMAO_LAYER_SYMBOLS_COPY \
+&none,               &mc_tilde,           &kp HASH,            &th_sqo 0 0,         &none,               &none,               &th_perc 0 0,        &th_eql 0 0,         &th_colon 0 0,       &none, \
+&kp AT,              &th_caret_z 0 0,     &kp DOLLAR,          &th_dqo 0 0,         &none,               &none,               &th_qmark 0 0,       &kp MINUS,           &kp PLUS,            &kp STAR, \
+&none,               &mc_lt,              &mc_gt,              &th_bti 0 0,         &none,               &none,               &th_excl 0 0,        &kp SLASH,           &kp STAR,            &none, \
+                                          &none,               &trans,              &kp SPACE,           &kp SPACE,           &trans,              &none
 
 // #define ROMAO_LAYER_MEDIA \
 // &none,               &none,               &mkp LCLK,           &mkp RCLK,           &none,               &none,               &mc_hand,            &kp ENTER,           &kp ESC,             &none, \
