@@ -31,18 +31,18 @@
 
         MACRO(tc_smart_plain1, &smart_plain1 PLAIN1)
 
-        // MACRO(mc_plain2, &sl PLAIN2)
-        // MACRO(mc_shifted_plain2, &sl SFT_PLAIN2)
-        // MOD_MORPH(mm_plain2_sft_plain2, MOD_LSFT|MOD_RSFT, &mc_shifted_plain2, &mc_plain2)
+        MACRO(mc_plain2, &sl PLAIN2)
+        MACRO(mc_shifted_plain2, &sl SFT_PLAIN2)
+        MOD_MORPH(mm_plain2_sft_plain2, MOD_LSFT|MOD_RSFT, &mc_shifted_plain2, &mc_plain2)
 
-        // msl_p2: msl_p2 {
-        //     compatible = "zmk,behavior-hold-tap";
-        //     #binding-cells = <2>;
-        //     tapping-term-ms = <QUICK_TAP_TERM>;
-        //     flavor = "tap-preferred";
-        //     quick-tap-ms = <0>;
-        //     bindings = <&mo>, <&mm_plain2_sft_plain2>;
-        // };
+        msl_p2: msl_p2 {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            tapping-term-ms = <QUICK_TAP_TERM>;
+            flavor = "tap-preferred";
+            quick-tap-ms = <0>;
+            bindings = <&mo>, <&mm_plain2_sft_plain2>;
+        };
 
         // // ********************** NUM WORD ********************** //
 
@@ -207,14 +207,14 @@
             bindings = <&mm_hold_alt_num_gui>, <&mm_tap_alt_space_gui>;
         };
 
-        // ht_sft_p2: ht_sft_p2 {
-        //     compatible = "zmk,behavior-hold-tap";
-        //     #binding-cells = <2>;
-        //     tapping-term-ms = <QUICK_TAP_TERM>;
-        //     flavor = "tap-preferred";
-        //     quick-tap-ms = <0>;
-        //     bindings = <&mo>, <&tc_shift>;
-        // };
+        ht_sft_p2: ht_sft_p2 {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            tapping-term-ms = <QUICK_TAP_TERM>;
+            flavor = "tap-preferred";
+            quick-tap-ms = <0>;
+            bindings = <&mo>, <&tc_shift>;
+        };
 
         msk_unds: msk_unds {
             compatible = "zmk,behavior-hold-tap";

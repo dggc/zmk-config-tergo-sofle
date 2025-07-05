@@ -23,9 +23,9 @@ ROMAO_X(CASE_ALPHA2,  "CASE") \
 ROMAO_X(CASE_CCEDIL,  "CASE") \
 ROMAO_X(SHORTCUTS,  "SHORTS") \
 ROMAO_X(MEHS,  "MEHS") \
-// ROMAO_X(PLAIN1,  "PLAIN") \
-// ROMAO_X(PLAIN2,  "PLAIN") \
-// ROMAO_X(SHIFTED_PLAIN2,  "PLAIN") \
+ROMAO_X(PLAIN1,  "PLAIN") \
+ROMAO_X(PLAIN2,  "PLAIN") \
+ROMAO_X(SHIFTED_PLAIN2,  "PLAIN") \
 // ROMAO_X(SECONDARY_ALTERNATE_REPEAT,  "ROMAK") \
 // ROMAO_X(NAVIGATION,  "NAV") \
 // ROMAO_X(NUMBERS_COPY,  "NUM") \
@@ -150,23 +150,23 @@ ROMAO_X(MEHS,  "MEHS") \
 &none,               &mt_meh_f LGUI 0,    &mt_meh_c LGUI 0,    &mt_meh_p LGUI 0,    &none,               &none,               &mt_meh_h LGUI 0,    &mt_meh_comm LGUI 0, &mt_meh_dot LGUI 0,  &none, \
                                           &none,               &lt_plain1 NAV 0,    &hsk LGUI LGUI,      &hsk LGUI LGUI,      &lt_plain1 NAV 0,    &none
 
-// #define ROMAO_LAYER_PLAIN1 \
-// &kp Q,               &kp B,               &kp M,               &kp G,               &kp K,               &kp X,               &kp L,               &kp O,               &kp U,               &kp Y, \
-// &kp D,               &kp N,               &kp S,               &kp T,               &kp W,               &kp Z,               &kp R,               &kp A,               &kp E,               &kp I, \
-// &none,               &kp F,               &kp C,               &kp P,               &kp V,               &kp J,               &kp H,               &kp COMMA,           &kp DOT,             &none, \
-//                                           &none,               &ht_repeat NAV 0,    &lt NUM_CP SPACE,    &msl_p2 SYM_CP 0,    &ht_sft_p2 MEDIA,    &none
+#define ROMAO_LAYER_PLAIN1 \
+&kp Q,               &kp B,               &kp M,               &kp G,               &kp K,               &kp X,               &kp L,               &kp O,               &kp U,               &kp Y, \
+&kp D,               &kp N,               &kp S,               &kp T,               &kp W,               &kp Z,               &kp R,               &kp A,               &kp E,               &kp I, \
+&none,               &kp F,               &kp C,               &kp P,               &kp V,               &kp J,               &kp H,               &kp COMMA,           &kp DOT,             &none, \
+                                          &none,               &ht_repeat NAV 0,    &lt NUM_CP SPACE,    &msl_p2 SYM_CP 0,    &ht_sft_p2 MEDIA,    &none
 
-// #define ROMAO_LAYER_PLAIN2 \
-// &none,               &kp Q,               &mc_qu,              &kp K,               &none,               &none,               &ac_ocir,            &ac_oacu,            &ac_uacu,            &none, \
-// &kp Y,               &kp Z,               &kp X,               &kp W,               &none,               &none,               &ac_atil,            &ac_aacu,            &ac_eacu,            &ac_iacu, \
-// &none,               &kp J,               &mc_ced,             &kp V,               &none,               &none,               &ac_otil,            &ac_acir,            &ac_ecir,            &none, \
-//                                           &none,               &mc_sqo,             &lt NUM_CP SPACE,    &lt SYM_CP SPACE,    &mc_sqo,             &none
+#define ROMAO_LAYER_PLAIN2 \
+&none,               &kp Q,               &mc_qu,              &kp K,               &none,               &none,               &ac_ocir,            &ac_oacu,            &ac_uacu,            &none, \
+&kp Y,               &kp Z,               &kp X,               &kp W,               &none,               &none,               &ac_atil,            &ac_aacu,            &ac_eacu,            &ac_iacu, \
+&none,               &kp J,               &mc_ced,             &kp V,               &none,               &none,               &ac_otil,            &ac_acir,            &ac_ecir,            &none, \
+                                          &none,               &mc_sqo,             &lt NUM_CP SPACE,    &lt SYM_CP SPACE,    &mc_sqo,             &none
 
-// #define ROMAO_LAYER_SHIFTED_PLAIN2 \
-// &none,               &kp LS(Q),           &mc_qu_s,            &kp LS(K),           &none,               &none,               &ac_ocir_s,          &ac_oacu_s,          &ac_uacu_s,          &none, \
-// &kp LS(Y),           &kp LS(Z),           &kp LS(X),           &kp LS(W),           &none,               &none,               &ac_atil_s,          &ac_aacu_s,          &ac_eacu_s,          &ac_iacu_s, \
-// &none,               &kp LS(J),           &mc_ced_s,           &kp LS(V),           &none,               &none,               &ac_otil_s,          &ac_acir_s,          &ac_ecir_s,          &none, \
-//                                           &none,               &mc_sqo,             &lt NUM_CP SPACE,    &lt SYM_CP SPACE,    &mc_sqo,             &none
+#define ROMAO_LAYER_SHIFTED_PLAIN2 \
+&none,               &kp LS(Q),           &mc_qu_s,            &kp LS(K),           &none,               &none,               &ac_ocir_s,          &ac_oacu_s,          &ac_uacu_s,          &none, \
+&kp LS(Y),           &kp LS(Z),           &kp LS(X),           &kp LS(W),           &none,               &none,               &ac_atil_s,          &ac_aacu_s,          &ac_eacu_s,          &ac_iacu_s, \
+&none,               &kp LS(J),           &mc_ced_s,           &kp LS(V),           &none,               &none,               &ac_otil_s,          &ac_acir_s,          &ac_ecir_s,          &none, \
+                                          &none,               &mc_sqo,             &lt NUM_CP SPACE,    &lt SYM_CP SPACE,    &mc_sqo,             &none
 
 // #define ROMAO_LAYER_SECONDARY_ALTERNATE_REPEAT \
 // &trans,              &trans,              &trans,              &trans,              &trans,              &trans,              &trans,              &trans,              &trans,              &trans, \
