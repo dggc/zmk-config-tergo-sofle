@@ -32,7 +32,7 @@ ROMAO_X(NUMBERS_COPY,  "NUM") \
 ROMAO_X(SYMBOLS_COPY,  "SYM") \
 ROMAO_X(MEDIA,  "MOUSE") \
 ROMAO_X(NAVIGATION_COPY,  "NAV") \
-// ROMAO_X(TEXT,  "TEXT") \
+ROMAO_X(TEXT,  "TEXT") \
 // ROMAO_X(FUNCTIONS,  "FUN") \
 // ROMAO_X(SMART,  "SMART")
 
@@ -204,11 +204,11 @@ ROMAO_X(NAVIGATION_COPY,  "NAV") \
 &none,               &kp LGUI,            &kp LGUI,            &kp LGUI,            &none,               &none,               &kp DEL,             &kp HOME,            &kp END,             &none, \
                                           &none,               &trans,              &trans,              &trans,              &trans,              &none
 
-// #define ROMAO_LAYER_TEXT \
-// &none,               &select_home,        &select_word,        &select_line,        &trans,              &trans,              &kp TAB,             &kp ENTER,           &kp ESC,             &none, \
-// &none,               &hsk LCTL RCTL,      &hsk LALT RALT,      &hsk LSFT RSFT,      &trans,              &trans,              &mc_prev_word,       &kp DOWN,            &kp UP,              &mc_next_word, \
-// &none,               &hsk LGUI RGUI,      &hsk LGUI RGUI,      &hsk LGUI RGUI,      &trans,              &trans,              &mc_del_word,        &kp HOME,            &kp END,             &none, \
-//                                           &none,               &key_repeat,         &none,               &none,               &key_repeat,         &none
+#define ROMAO_LAYER_TEXT \
+&none,               &select_home,        &select_word,        &select_line,        &trans,              &trans,              &kp TAB,             &kp ENTER,           &kp ESC,             &none, \
+&none,               &hsk LCTL RCTL,      &hsk LALT RALT,      &hsk LSFT RSFT,      &trans,              &trans,              &mc_prev_word,       &kp DOWN,            &kp UP,              &mc_next_word, \
+&none,               &hsk LGUI RGUI,      &hsk LGUI RGUI,      &hsk LGUI RGUI,      &trans,              &trans,              &mc_del_word,        &kp HOME,            &kp END,             &none, \
+                                          &none,               &key_repeat,         &none,               &none,               &key_repeat,         &none
 
 // #define ROMAO_LAYER_FUNCTIONS \
 // &none,               &bt BT_PRV,          &bt BT_NXT,          &bt BT_SEL 0,        &none,               &none,               &kp F7,              &kp F8,              &kp F9,              &none, \
