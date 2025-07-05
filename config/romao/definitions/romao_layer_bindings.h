@@ -33,7 +33,7 @@ ROMAO_X(SYMBOLS_COPY,  "SYM") \
 ROMAO_X(MEDIA,  "MOUSE") \
 ROMAO_X(NAVIGATION_COPY,  "NAV") \
 ROMAO_X(TEXT,  "TEXT") \
-// ROMAO_X(FUNCTIONS,  "FUN") \
+ROMAO_X(FUNCTIONS,  "FUN") \
 // ROMAO_X(SMART,  "SMART")
 
 #define ROMAO_LAYER_DEFAULT \
@@ -210,11 +210,11 @@ ROMAO_X(TEXT,  "TEXT") \
 &none,               &hsk LGUI RGUI,      &hsk LGUI RGUI,      &hsk LGUI RGUI,      &trans,              &trans,              &mc_del_word,        &kp HOME,            &kp END,             &none, \
                                           &none,               &key_repeat,         &none,               &none,               &key_repeat,         &none
 
-// #define ROMAO_LAYER_FUNCTIONS \
-// &none,               &bt BT_PRV,          &bt BT_NXT,          &bt BT_SEL 0,        &none,               &none,               &kp F7,              &kp F8,              &kp F9,              &none, \
-// &none,               &hsk RCTL LCTL,      &hsk RALT LALT,      &hsk RSFT LSFT,      &none,               &none,               &kp F4,              &kp F5,              &kp F6,              &none, \
-// &none,               &hsk RGUI LGUI,      &hsk RGUI LGUI,      &hsk RGUI LGUI,      &none,               &none,               &kp F1,              &kp F2,              &kp F3,              &none, \
-//                                           &none,               &bootloader,         &none,               &none,               &key_repeat,         &none
+#define ROMAO_LAYER_FUNCTIONS \
+&none,               &bt BT_PRV,          &bt BT_NXT,          &bt BT_SEL 0,        &none,               &none,               &kp F7,              &kp F8,              &kp F9,              &none, \
+&none,               &hsk RCTL LCTL,      &hsk RALT LALT,      &hsk RSFT LSFT,      &none,               &none,               &kp F4,              &kp F5,              &kp F6,              &none, \
+&none,               &hsk RGUI LGUI,      &hsk RGUI LGUI,      &hsk RGUI LGUI,      &none,               &none,               &kp F1,              &kp F2,              &kp F3,              &none, \
+                                          &none,               &bootloader,         &none,               &none,               &key_repeat,         &none
 
 // #define ROMAO_LAYER_SMART \
 // &none,               &none,               &tc_smart_word,      &tc_smart_line,      &none,               &none,               &mc_vim_replace,     &mc_o_esc,           &mc_sft_o_esc,       &none, \
